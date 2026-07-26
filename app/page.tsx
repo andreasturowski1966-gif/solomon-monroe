@@ -1,0 +1,339 @@
+import Image from "next/image";
+
+const navigation = [
+  { label: "Story", href: "#story" },
+  { label: "Music", href: "#music" },
+  { label: "Life", href: "#life" },
+  { label: "Gallery", href: "#gallery" },
+];
+
+const chapters = [
+  {
+    year: "1966",
+    title: "Born between steel and song",
+    text: "Raised in the American South, Solomon grew up with the steady hands of a steelworker father and the musical ear of a mother who taught music.",
+  },
+  {
+    year: "Young man",
+    title: "A path that wasn't his",
+    text: "After high school he followed his father into the steelworks. He respected the work, but quickly understood that his own life was calling from somewhere else.",
+  },
+  {
+    year: "College years",
+    title: "Classrooms by day, soul clubs by night",
+    text: "Solomon studied music and English education while spending his evenings learning the truth of a song in bars and small soul clubs.",
+  },
+  {
+    year: "A lifetime",
+    title: "The teacher finds his own voice",
+    text: "For decades he taught high school students to read closely, listen deeply, and trust their voices. Only later did he decide it was time to fully trust his own.",
+  },
+];
+
+export default function Home() {
+  return (
+    <main className="min-h-screen overflow-hidden bg-[#0d0b09] text-[#f3eadb]">
+      <section
+        id="home"
+        className="hero relative isolate flex min-h-[100svh] flex-col"
+      >
+        <div className="hero-image absolute inset-0 -z-30" aria-hidden="true" />
+        <div
+          className="absolute inset-0 -z-20 bg-[linear-gradient(90deg,rgba(7,5,4,0.96)_0%,rgba(7,5,4,0.72)_40%,rgba(7,5,4,0.15)_75%,rgba(7,5,4,0.35)_100%)]"
+          aria-hidden="true"
+        />
+        <div
+          className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,rgba(7,5,4,0.68)_0%,transparent_28%,rgba(7,5,4,0.15)_55%,rgba(7,5,4,0.98)_100%)]"
+          aria-hidden="true"
+        />
+
+        <header className="mx-auto flex w-full max-w-[1500px] items-center justify-between px-5 py-6 sm:px-8 lg:px-12">
+          <a
+            href="#home"
+            className="text-xs font-bold uppercase tracking-[0.3em] text-[#e6d4b9] transition-colors hover:text-[#cf8d43]"
+            aria-label="Solomon Monroe – Home"
+          >
+            Home
+          </a>
+          <nav
+            className="hidden items-center gap-8 text-[0.68rem] font-bold uppercase tracking-[0.22em] md:flex"
+            aria-label="Main navigation"
+          >
+            {navigation.map((item) => (
+              <a
+                key={item.label}
+                href={item.href}
+                className="text-white/65 transition-colors hover:text-[#d99b52]"
+              >
+                {item.label}
+              </a>
+            ))}
+          </nav>
+          <details className="group relative md:hidden">
+            <summary className="flex cursor-pointer list-none items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] [&::-webkit-details-marker]:hidden">
+              Menu
+              <span className="relative block h-3.5 w-5" aria-hidden="true">
+                <span className="absolute left-0 top-0 h-px w-5 bg-current transition-transform group-open:translate-y-[6px] group-open:rotate-45" />
+                <span className="absolute bottom-0 left-0 h-px w-5 bg-current transition-transform group-open:-translate-y-[7px] group-open:-rotate-45" />
+              </span>
+            </summary>
+            <nav className="absolute right-0 top-9 z-20 w-48 border border-white/10 bg-[#0d0b09]/96 p-2 shadow-2xl backdrop-blur-xl">
+              {navigation.map((item) => (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="block px-4 py-3 text-sm tracking-[0.12em] text-white/75 transition-colors hover:bg-white/5 hover:text-[#d99b52]"
+                >
+                  {item.label}
+                </a>
+              ))}
+            </nav>
+          </details>
+        </header>
+
+        <div className="mx-auto flex w-full max-w-[1500px] flex-1 items-end px-5 pb-16 pt-24 sm:px-8 sm:pb-20 lg:px-12 lg:pb-24">
+          <div className="max-w-4xl">
+            <p className="mb-6 flex items-center gap-3 text-[0.68rem] font-bold uppercase tracking-[0.35em] text-[#d99b52]">
+              <span className="h-px w-10 bg-current" aria-hidden="true" />
+              Southern Soul · Stories lived in
+            </p>
+            <h1 className="font-serif text-6xl leading-[0.82] tracking-[-0.055em] text-[#f5ecde] sm:text-8xl lg:text-[8.5rem]">
+              Solomon
+              <span className="block italic text-[#d7b98d]">Monroe</span>
+            </h1>
+            <p className="mt-8 max-w-xl text-base leading-8 text-white/68 sm:text-lg">
+              A lifetime in the making. Soul music shaped by hard work,
+              classrooms, second chances, and the courage to begin again.
+            </p>
+            <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+              <a
+                href="#story"
+                className="inline-flex min-h-12 items-center justify-center bg-[#b56c2e] px-8 text-xs font-bold uppercase tracking-[0.2em] text-white transition-colors hover:bg-[#cb8240]"
+              >
+                Meet Solomon
+              </a>
+              <a
+                href="#music"
+                className="inline-flex min-h-12 items-center justify-center border border-white/30 px-8 text-xs font-bold uppercase tracking-[0.2em] transition-colors hover:border-white/70 hover:bg-white/8"
+              >
+                The music
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-[#d99b52]/15 bg-[#15110e] px-5 py-20 sm:px-8 sm:py-28">
+        <div className="mx-auto max-w-5xl text-center">
+          <p className="text-[0.68rem] font-bold uppercase tracking-[0.35em] text-[#c47f3d]">
+            The heart of it
+          </p>
+          <blockquote className="mt-7 font-serif text-4xl leading-[1.08] tracking-[-0.025em] text-[#eee1ce] sm:text-6xl">
+            “Dreams don&apos;t have an expiration date.”
+          </blockquote>
+        </div>
+      </section>
+
+      <section id="story" className="scroll-mt-8 bg-[#e8ddcc] text-[#241a13]">
+        <div className="grid lg:grid-cols-[0.95fr_1.05fr]">
+          <div className="relative min-h-[68vh] lg:min-h-full">
+            <Image
+              src="/images/story/solomon-window.png"
+              alt="Solomon Monroe looking through a studio window"
+              fill
+              priority
+              sizes="(max-width: 1024px) 100vw, 48vw"
+              className="object-cover object-center"
+            />
+          </div>
+          <div className="px-5 py-20 sm:px-10 sm:py-28 lg:px-16 xl:px-24">
+            <p className="text-[0.68rem] font-bold uppercase tracking-[0.35em] text-[#9d5724]">
+              His story
+            </p>
+            <h2 className="mt-6 max-w-xl font-serif text-5xl leading-[0.95] tracking-[-0.045em] sm:text-7xl">
+              A voice seasoned by life.
+            </h2>
+            <p className="mt-7 max-w-xl text-base leading-8 text-black/62">
+              Solomon Monroe was born in 1966 in the American South. Music
+              arrived early, but the road toward becoming an artist took the
+              long way around.
+            </p>
+            <div className="mt-14">
+              {chapters.map((chapter) => (
+                <article
+                  key={chapter.title}
+                  className="grid gap-4 border-t border-black/15 py-7 sm:grid-cols-[6rem_1fr]"
+                >
+                  <p className="pt-1 text-[0.65rem] font-bold uppercase tracking-[0.2em] text-[#9d5724]">
+                    {chapter.year}
+                  </p>
+                  <div>
+                    <h3 className="font-serif text-2xl sm:text-3xl">
+                      {chapter.title}
+                    </h3>
+                    <p className="mt-3 text-sm leading-7 text-black/58 sm:text-base">
+                      {chapter.text}
+                    </p>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="music"
+        className="scroll-mt-8 px-5 py-24 sm:px-8 sm:py-32 lg:px-12"
+      >
+        <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-20">
+          <div>
+            <p className="text-[0.68rem] font-bold uppercase tracking-[0.35em] text-[#d99b52]">
+              The music
+            </p>
+            <h2 className="mt-6 font-serif text-5xl leading-[0.95] tracking-[-0.045em] sm:text-7xl">
+              Soul with a lifetime behind it.
+            </h2>
+            <p className="mt-7 max-w-xl text-base leading-8 text-white/55 sm:text-lg">
+              Classic Southern soul meets blues, gospel, and grown-man
+              storytelling. These are songs about love after disappointment,
+              dignity, forgiveness, family, and the moment you finally choose
+              your own voice.
+            </p>
+            <div className="mt-10 grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2">
+              {[
+                ["Southern Soul", "Warm, human, unhurried"],
+                ["Blues & Gospel", "Roots that still show"],
+                ["Storytelling", "People before clichés"],
+                ["Second Chances", "No dream too late"],
+              ].map(([title, description]) => (
+                <div key={title} className="bg-[#100d0b] p-6">
+                  <h3 className="font-serif text-2xl">{title}</h3>
+                  <p className="mt-2 text-sm text-white/40">{description}</p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-8 text-xs font-bold uppercase tracking-[0.22em] text-[#a36c3a]">
+              Songs and lyrics coming next
+            </p>
+          </div>
+          <div className="relative aspect-[4/5] overflow-hidden bg-[#1d1712]">
+            <Image
+              src="/images/story/solomon-at-piano.png"
+              alt="Solomon Monroe seated beside a piano"
+              fill
+              sizes="(max-width: 1024px) 90vw, 44vw"
+              className="object-cover object-top"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
+          </div>
+        </div>
+      </section>
+
+      <section id="life" className="scroll-mt-8 bg-[#17120e]">
+        <div className="grid lg:grid-cols-2">
+          <div className="relative min-h-[58vh]">
+            <Image
+              src="/images/story/solomon-and-wife.png"
+              alt="Solomon Monroe and his wife sitting together by the fire"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover object-center"
+            />
+          </div>
+          <div className="flex items-center px-5 py-20 sm:px-10 sm:py-28 lg:px-16 xl:px-24">
+            <div className="max-w-xl">
+              <p className="text-[0.68rem] font-bold uppercase tracking-[0.35em] text-[#d99b52]">
+                Life beyond the stage
+              </p>
+              <h2 className="mt-6 font-serif text-5xl leading-[0.98] tracking-[-0.045em] sm:text-7xl">
+                Family is built by showing up.
+              </h2>
+              <p className="mt-8 text-base leading-8 text-white/55">
+                Solomon has been married to his second wife for more than
+                twenty years. Their life is grounded in friendship,
+                reliability, and the quiet decision to keep choosing one
+                another.
+              </p>
+              <p className="mt-5 text-base leading-8 text-white/55">
+                His daughter from his first marriage became a teacher too. His
+                stepson is no less a part of the family. To Solomon, family is
+                not defined by origin alone, but by trust, responsibility, and
+                being there when it matters.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="gallery"
+        className="scroll-mt-8 bg-[#e8ddcc] px-5 py-24 text-[#241a13] sm:px-8 sm:py-32 lg:px-12"
+      >
+        <div className="mx-auto max-w-7xl">
+          <div className="max-w-3xl">
+            <p className="text-[0.68rem] font-bold uppercase tracking-[0.35em] text-[#9d5724]">
+              In his own time
+            </p>
+            <h2 className="mt-6 font-serif text-5xl leading-[0.95] tracking-[-0.045em] sm:text-7xl">
+              The man behind the voice.
+            </h2>
+          </div>
+          <div className="mt-16 grid auto-rows-[22rem] gap-2 sm:grid-cols-2 lg:grid-cols-4">
+            <figure className="relative overflow-hidden sm:col-span-2 sm:row-span-2">
+              <Image
+                src="/images/gallery/solomon-live.png"
+                alt="Solomon Monroe singing into a vintage microphone at dusk"
+                fill
+                sizes="(max-width: 640px) 100vw, 50vw"
+                className="object-cover object-center transition duration-700 hover:scale-[1.02]"
+              />
+            </figure>
+            <figure className="relative overflow-hidden lg:col-span-2">
+              <Image
+                src="/images/gallery/solomon-home.png"
+                alt="Solomon Monroe cooking with his wife at home"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover object-center transition duration-700 hover:scale-[1.02]"
+              />
+            </figure>
+            <figure className="relative overflow-hidden lg:col-span-2">
+              <Image
+                src="/images/gallery/solomon-park.png"
+                alt="Solomon Monroe walking through a sunny park"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover object-[center_24%] transition duration-700 hover:scale-[1.02]"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <footer className="border-t border-white/10 px-5 py-16 sm:px-8 lg:px-12">
+        <div className="mx-auto grid max-w-7xl gap-10 sm:grid-cols-2 sm:items-end">
+          <div>
+            <p className="font-serif text-4xl tracking-[-0.035em]">
+              Solomon Monroe
+            </p>
+            <p className="mt-3 text-[0.65rem] font-bold uppercase tracking-[0.28em] text-[#d99b52]">
+              Southern Soul · Stories lived in
+            </p>
+          </div>
+          <div className="sm:text-right">
+            <a
+              href="#home"
+              className="text-xs font-bold uppercase tracking-[0.22em] text-white/55 transition-colors hover:text-[#d99b52]"
+            >
+              Back to top
+            </a>
+            <p className="mt-6 text-xs text-white/25">
+              © 2026 Solomon Monroe. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  );
+}

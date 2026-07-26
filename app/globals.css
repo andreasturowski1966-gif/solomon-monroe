@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0d0b09;
+  --foreground: #f3eadb;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: "Aptos", "Segoe UI", Arial, Helvetica, sans-serif;
+  --font-serif: Georgia, "Times New Roman", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--background);
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Aptos", "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero-image {
+  background-color: #17110c;
+  background-image: url("/images/hero/solomon-stage.png");
+  background-position: 60% center;
+  background-size: cover;
+}
+
+@media (max-width: 639px) {
+  .hero-image {
+    background-position: 68% center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    transition-duration: 0.01ms !important;
+  }
+}
