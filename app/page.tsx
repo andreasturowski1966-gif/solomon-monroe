@@ -437,7 +437,7 @@ export default function Home() {
               Message on Messenger
             </a>
             <p className="mt-6 text-xs text-white/25">
-              © 2026 Solomon Monroe. All rights reserved.
+              © 2026 Alex Turow Records. All rights reserved.
             </p>
           </div>
         </div>
