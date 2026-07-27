@@ -12,6 +12,7 @@ const streamingLinks = {
 const navigation = [
   { label: "Story", href: "#story" },
   { label: "Music", href: "#music" },
+  { label: "Videos", href: "/videos" },
   { label: "Life", href: "#life" },
   { label: "Gallery", href: "#gallery" },
   { label: "Lyrics", href: "/lyrics" },
@@ -361,12 +362,20 @@ export default function Home() {
             </p>
           </div>
           <div className="sm:text-right">
-            <Link
-              href="/lyrics"
-              className="text-xs font-bold uppercase tracking-[0.22em] text-white/55 transition-colors hover:text-[#d99b52]"
-            >
-              Lyrics
-            </Link>
+            <div className="flex gap-7 sm:justify-end">
+              <Link
+                href="/videos"
+                className="text-xs font-bold uppercase tracking-[0.22em] text-white/55 transition-colors hover:text-[#d99b52]"
+              >
+                Videos
+              </Link>
+              <Link
+                href="/lyrics"
+                className="text-xs font-bold uppercase tracking-[0.22em] text-white/55 transition-colors hover:text-[#d99b52]"
+              >
+                Lyrics
+              </Link>
+            </div>
             <p className="mt-6 text-xs text-white/25">
               © 2026 Solomon Monroe. All rights reserved.
             </p>
