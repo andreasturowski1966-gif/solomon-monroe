@@ -200,7 +200,23 @@ export default function VideosPage() {
       <footer className="border-t border-white/10 px-5 py-14 sm:px-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-serif text-3xl">Solomon Monroe</p>
-          <div className="flex gap-7 text-xs font-bold uppercase tracking-[0.2em] text-white/55">
+          <div className="flex flex-wrap gap-7 text-xs font-bold uppercase tracking-[0.2em] text-white/55">
+            <a
+              href="https://www.facebook.com/SolomonMonroeMusic"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-[#d99b52]"
+            >
+              Facebook
+            </a>
+            <a
+              href="https://m.me/SolomonMonroeMusic"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-[#d99b52]"
+            >
+              Messenger
+            </a>
             <Link href="/lyrics" className="transition-colors hover:text-[#d99b52]">
               Lyrics
             </Link>

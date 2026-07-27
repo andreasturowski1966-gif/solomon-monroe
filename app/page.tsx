@@ -369,6 +369,14 @@ export default function Home() {
           </div>
           <div className="sm:text-right">
             <div className="flex gap-7 sm:justify-end">
+              <a
+                href="https://www.facebook.com/SolomonMonroeMusic"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs font-bold uppercase tracking-[0.22em] text-white/55 transition-colors hover:text-[#d99b52]"
+              >
+                Facebook
+              </a>
               <Link
                 href="/videos"
                 className="text-xs font-bold uppercase tracking-[0.22em] text-white/55 transition-colors hover:text-[#d99b52]"
@@ -382,6 +390,14 @@ export default function Home() {
                 Lyrics
               </Link>
             </div>
+            <a
+              href="https://m.me/SolomonMonroeMusic"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-5 inline-block text-xs font-bold uppercase tracking-[0.2em] text-[#d99b52] transition-colors hover:text-[#e7ae6c]"
+            >
+              Message on Messenger
+            </a>
             <p className="mt-6 text-xs text-white/25">
               © 2026 Solomon Monroe. All rights reserved.
             </p>
