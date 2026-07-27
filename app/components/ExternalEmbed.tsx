@@ -26,13 +26,15 @@ export default function ExternalEmbed({
 
   if (isLoaded) {
     return (
-      <iframe
-        src={src}
-        title={title}
-        allow={allow}
-        allowFullScreen={allowFullScreen}
-        className={iframeClassName}
-      />
+      <div className={containerClassName}>
+        <iframe
+          src={src}
+          title={title}
+          allow={allow}
+          allowFullScreen={allowFullScreen}
+          className={iframeClassName}
+        />
+      </div>
     );
   }
 
