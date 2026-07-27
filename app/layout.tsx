@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -16,6 +17,14 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {children}
+        <div className="border-t border-white/6 bg-[#0d0b09] px-5 py-4 text-center">
+          <Link
+            href="/impressum"
+            className="text-[0.6rem] uppercase tracking-[0.18em] text-white/30 transition-colors hover:text-white/60"
+          >
+            Impressum
+          </Link>
+        </div>
         <a
           href="https://m.me/SolomonMonroeMusic"
           target="_blank"
