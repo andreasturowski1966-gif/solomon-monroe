@@ -1,4 +1,4 @@
-(spoken)
+(Spoken)
 
 “Back in the day…”
 “The good old days…”
@@ -79,7 +79,7 @@ But every golden yesterday
 Had a price somebody paid
 Those were the days
 
-(spoken)
+(Spoken)
 
 Yeah…
 Those were the days
