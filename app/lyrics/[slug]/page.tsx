@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getSong, songs } from "../data";
@@ -42,7 +43,25 @@ export default async function SongLyricsPage({
   const nextSong = songs[songIndex + 1];
 
   return (
-    <main className="min-h-screen bg-[#0d0b09] text-[#f3eadb]">
+    <main className="relative isolate min-h-screen overflow-hidden bg-[#0d0b09] text-[#f3eadb]">
+      {song.image && (
+        <div
+          className="pointer-events-none fixed inset-0 z-0"
+          aria-hidden="true"
+        >
+          <Image
+            src={song.image}
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center opacity-25 grayscale-[15%]"
+          />
+          <div className="absolute inset-0 bg-[#0d0b09]/70" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,transparent_0%,rgba(13,11,9,0.38)_55%,rgba(13,11,9,0.86)_100%)]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0d0b09]/45 via-transparent to-[#0d0b09]/90" />
+        </div>
+      )}
       <header className="sticky top-0 z-20 border-b border-white/10 bg-[#0d0b09]/92 backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-5 sm:px-8">
           <Link
@@ -71,7 +90,7 @@ export default async function SongLyricsPage({
         </div>
       </header>
 
-      <article className="px-5 py-16 sm:px-8 sm:py-24">
+      <article className="relative z-10 px-5 py-16 sm:px-8 sm:py-24">
         <div className="mx-auto max-w-3xl">
           <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#c47f3d]">
             Solomon Monroe · Song {song.number}

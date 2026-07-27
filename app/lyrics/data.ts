@@ -8,6 +8,7 @@ export type Song = {
   number: string;
   stanzas: string[][];
   story?: SongStory;
+  image?: string;
 };
 
 const lyricsDirectory = path.join(process.cwd(), "content", "lyrics");
@@ -47,12 +48,24 @@ function readSongs(): Song[] {
       .trim();
 
     const slug = slugify(title);
+    const imageSlug =
+      slug === "simply-alive-live-on-stage" ? "simply-alive" : slug;
+    const publicImagePath = path.join(
+      process.cwd(),
+      "public",
+      "images",
+      "lyrics",
+      `${imageSlug}.webp`,
+    );
 
     return {
       slug,
       title,
       number: String(index + 1).padStart(2, "0"),
       story: songStories[slug],
+      image: fs.existsSync(publicImagePath)
+        ? `/images/lyrics/${imageSlug}.webp`
+        : undefined,
       stanzas: text
         .split(/\r?\n\s*\r?\n/)
         .map((stanza) => stanza.split(/\r?\n/).map((line) => line.trimEnd())),
