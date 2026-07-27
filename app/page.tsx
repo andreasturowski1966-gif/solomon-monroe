@@ -101,9 +101,14 @@ export default function Home() {
           </details>
         </header>
 
+        <p className="absolute left-5 top-24 flex items-center gap-3 text-[0.6rem] font-bold uppercase tracking-[0.25em] text-[#d99b52] sm:hidden">
+          <span className="h-px w-7 bg-current" aria-hidden="true" />
+          Southern Soul · Stories lived in
+        </p>
+
         <div className="mx-auto flex w-full max-w-[1500px] flex-1 items-end px-5 pb-16 pt-24 sm:px-8 sm:pb-20 lg:px-12 lg:pb-24">
           <div className="max-w-4xl">
-            <p className="mb-6 flex items-center gap-3 text-[0.68rem] font-bold uppercase tracking-[0.35em] text-[#d99b52]">
+            <p className="mb-6 hidden items-center gap-3 text-[0.68rem] font-bold uppercase tracking-[0.35em] text-[#d99b52] sm:flex">
               <span className="h-px w-10 bg-current" aria-hidden="true" />
               Southern Soul · Stories lived in
             </p>
