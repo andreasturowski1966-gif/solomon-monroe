@@ -60,6 +60,22 @@ export const songStories: Record<string, SongStory> = {
       "I offered plenty of advice, though situations like that are never simple from the outside. In the end, maybe the best wisdom is to keep as few fools in your life as possible. This is also another visit to the world of swing. There are a couple more, but I promise the soul never went anywhere.",
     ],
   },
+  "lets-do-it-again": {
+    teaser:
+      "An imagined reunion with the girl from one unforgettable summer—and a reason some memories should remain memories.",
+    paragraphs: [
+      "What happens in this song never actually happened, though I can imagine it. You may remember the girl from “Take Me Back Home Again.” After that summer, I never saw her again. I had only been visiting my grandmother, and she went off to college—or somewhere else life was calling her.",
+      "Would I do it all again if the chance appeared? I have an answer for that too: probably not. Some things are best left exactly where they belong—in our memories.",
+    ],
+  },
+  "lets-sing-about-freedom": {
+    teaser:
+      "A song about speaking freely while remembering that freedom and responsibility belong together.",
+    paragraphs: [
+      "I am not a particularly political man, but some things matter enough that I feel called to put in my two cents. The freedom to speak your mind without being publicly shamed or troubled by the state matters deeply to me.",
+      "Do not misunderstand me: freedom should never become an excuse to cross every line. Speak your truth, but do not use it to wound somebody else. I say that from the heart.",
+    ],
+  },
   "magic-in-the-moonlight": {
     teaser:
       "One stolen kiss became the beginning of a second chance—and a marriage lasting more than twenty years.",
@@ -98,6 +114,14 @@ export const songStories: Record<string, SongStory> = {
     paragraphs: [
       "The short version is that I had this hook in my head and it refused to leave.",
       "There is no deeper meaning hiding behind it. It is simply a cool chorus that wanted to become a song. Sometimes songwriting really is that easy.",
+    ],
+  },
+  "rise-again": {
+    teaser:
+      "A firm but compassionate message for the person whose troubles always seem to become someone else’s burden.",
+    paragraphs: [
+      "Everybody knows somebody like this—the person who always has a problem. And I mean always. Whatever they touch seems to become a disaster sooner or later, and then somebody else has to come along and sweep up the pieces.",
+      "I am not saying you should leave that person standing alone in the rain. I am saying you should help them learn how to help themselves. Mercy matters, but so does giving someone the courage and responsibility to stand on their own feet and rise again.",
     ],
   },
   "sexual-attraction": {
