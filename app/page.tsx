@@ -211,7 +211,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-20">
           <div>
             <p className="text-[0.68rem] font-bold uppercase tracking-[0.35em] text-[#d99b52]">
-              The music
+              The music &amp; the stories
             </p>
             <h2 className="mt-6 font-serif text-5xl leading-[0.95] tracking-[-0.045em] sm:text-7xl">
               Soul with a lifetime behind it.
@@ -220,13 +220,40 @@ export default function Home() {
               Classic Southern soul meets blues, gospel, and grown-man
               storytelling. These are songs about love after disappointment,
               dignity, forgiveness, family, and the moment you finally choose
-              your own voice.
+              your own voice. Open any song to read its lyrics—and hear
+              Solomon tell the real memory, person, or turning point that
+              inspired it.
             </p>
+            <Link
+              href="/lyrics"
+              className="group mt-10 block border border-[#d99b52]/25 bg-[#17120e] p-7 transition-colors hover:border-[#d99b52]/55 hover:bg-[#1d1712] sm:p-8"
+            >
+              <p className="text-[0.65rem] font-bold uppercase tracking-[0.3em] text-[#d99b52]">
+                More than lyrics
+              </p>
+              <h3 className="mt-4 font-serif text-3xl leading-tight text-[#f3eadb] sm:text-4xl">
+                Every song has a story.
+              </h3>
+              <p className="mt-4 text-sm leading-7 text-white/52 sm:text-base">
+                Behind these songs are a cancer diagnosis, two marriages, a
+                daughter, the loss of a father, hard seasons, second chances,
+                and a lifetime of lessons Solomon chose to put into music.
+              </p>
+              <span className="mt-6 inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-[#d99b52]">
+                Discover the stories
+                <span
+                  className="transition-transform group-hover:translate-x-1"
+                  aria-hidden="true"
+                >
+                  &rarr;
+                </span>
+              </span>
+            </Link>
             <div className="mt-10 grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2">
               {[
                 ["Southern Soul", "Warm, human, unhurried"],
                 ["Blues & Gospel", "Roots that still show"],
-                ["Storytelling", "People before clichés"],
+                ["Storytelling", "The truth behind every song"],
                 ["Second Chances", "No dream too late"],
               ].map(([title, description]) => (
                 <div key={title} className="bg-[#100d0b] p-6">
