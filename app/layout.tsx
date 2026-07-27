@@ -22,13 +22,13 @@ export default function RootLayout({
             href="/impressum"
             className="text-[0.6rem] uppercase tracking-[0.18em] text-white/30 transition-colors hover:text-white/60"
           >
-            Impressum
+            Legal Notice / Impressum
           </Link>
           <Link
             href="/datenschutz"
             className="text-[0.6rem] uppercase tracking-[0.18em] text-white/30 transition-colors hover:text-white/60"
           >
-            Datenschutz
+            Privacy Policy / Datenschutz
           </Link>
         </div>
         <a
