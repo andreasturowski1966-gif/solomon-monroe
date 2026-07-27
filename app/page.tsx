@@ -120,6 +120,8 @@ export default function Home() {
             <p className="mt-8 max-w-xl text-base leading-8 text-white/68 sm:text-lg">
               A lifetime in the making. Soul music shaped by hard work,
               classrooms, second chances, and the courage to begin again.
+              Every song carries a story—and here, Solomon shares the life
+              behind the lyrics.
             </p>
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
               <a
@@ -132,7 +134,7 @@ export default function Home() {
                 href="#music"
                 className="inline-flex min-h-12 items-center justify-center border border-white/30 px-8 text-xs font-bold uppercase tracking-[0.2em] transition-colors hover:border-white/70 hover:bg-white/8"
               >
-                The music
+                The music — The stories
               </a>
               <Link
                 href="/videos"
