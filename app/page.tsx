@@ -1,10 +1,20 @@
 import Image from "next/image";
+import Link from "next/link";
+import { songs } from "./lyrics/data";
+
+const streamingLinks = {
+  spotify:
+    "https://open.spotify.com/intl-de/artist/2bSH5AS6F3w6oIPlgJD1wM?si=B6K2ke6xTBKoZ6cBj6O8lw",
+  amazon:
+    "https://music.amazon.de/artists/B0GYM3JDGY/solomon-monroe",
+};
 
 const navigation = [
   { label: "Story", href: "#story" },
   { label: "Music", href: "#music" },
   { label: "Life", href: "#life" },
   { label: "Gallery", href: "#gallery" },
+  { label: "Lyrics", href: "/lyrics" },
 ];
 
 const chapters = [
@@ -213,9 +223,18 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <p className="mt-8 text-xs font-bold uppercase tracking-[0.22em] text-[#a36c3a]">
-              Songs and lyrics coming next
-            </p>
+            <div className="mt-9 border-t border-white/10">
+              {songs.slice(0, 6).map((song) => (
+                <Link key={song.slug} href={`/lyrics/${song.slug}`} className="group grid grid-cols-[2.5rem_1fr_auto] items-center gap-3 border-b border-white/10 py-4">
+                  <span className="text-[0.68rem] font-bold tracking-[0.15em] text-white/30">{song.number}</span>
+                  <span className="font-serif text-xl transition-colors group-hover:text-[#d99b52] sm:text-2xl">{song.title}</span>
+                  <span className="text-white/30 transition-all group-hover:translate-x-1 group-hover:text-[#d99b52]" aria-hidden="true">&rarr;</span>
+                </Link>
+              ))}
+            </div>
+            <Link href="/lyrics" className="mt-8 inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-[#d99b52] transition-colors hover:text-[#e7ae6c]">
+              Read all {songs.length} lyrics <span aria-hidden="true">&rarr;</span>
+            </Link>
           </div>
           <div className="relative aspect-[4/5] overflow-hidden bg-[#1d1712]">
             <Image
@@ -226,6 +245,21 @@ export default function Home() {
               className="object-cover object-top"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
+          </div>
+        </div>
+
+        <div className="mx-auto mt-24 grid max-w-7xl gap-10 border-t border-white/10 pt-16 sm:mt-32 sm:pt-20 lg:grid-cols-[0.75fr_1.25fr] lg:items-center">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#c47f3d]">Listen now</p>
+            <h2 className="mt-5 font-serif text-4xl leading-tight tracking-[-0.035em] sm:text-6xl">Find Solomon on your favorite service.</h2>
+            <p className="mt-6 max-w-xl text-base leading-8 text-white/55">Follow the official artist profile for the latest releases and everything still to come.</p>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">
+              <a href={streamingLinks.spotify} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center justify-center bg-[#1ed760] px-7 text-xs font-bold uppercase tracking-[0.18em] text-[#07150b] transition-colors hover:bg-[#35e273]">Open Spotify</a>
+              <a href={streamingLinks.amazon} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center justify-center border border-white/25 px-7 text-xs font-bold uppercase tracking-[0.18em] text-white transition-colors hover:border-white/60 hover:bg-white/8">Open Amazon Music</a>
+            </div>
+          </div>
+          <div className="overflow-hidden rounded-xl bg-[#1d1712] shadow-2xl shadow-black/30">
+            <iframe title="Solomon Monroe on Spotify" src="https://open.spotify.com/embed/artist/2bSH5AS6F3w6oIPlgJD1wM?utm_source=generator&theme=0" width="100%" height="352" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" className="block border-0" />
           </div>
         </div>
       </section>
@@ -322,12 +356,12 @@ export default function Home() {
             </p>
           </div>
           <div className="sm:text-right">
-            <a
-              href="#home"
+            <Link
+              href="/lyrics"
               className="text-xs font-bold uppercase tracking-[0.22em] text-white/55 transition-colors hover:text-[#d99b52]"
             >
-              Back to top
-            </a>
+              Lyrics
+            </Link>
             <p className="mt-6 text-xs text-white/25">
               © 2026 Solomon Monroe. All rights reserved.
             </p>
