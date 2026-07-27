@@ -134,6 +134,12 @@ export default function Home() {
               >
                 The music
               </a>
+              <Link
+                href="/videos"
+                className="inline-flex min-h-12 items-center justify-center border border-[#d99b52]/70 px-8 text-xs font-bold uppercase tracking-[0.2em] text-[#e8b77d] transition-colors hover:border-[#d99b52] hover:bg-[#d99b52]/10 hover:text-white"
+              >
+                The videos
+              </Link>
             </div>
           </div>
         </div>
