@@ -210,6 +210,7 @@ export const songStories: Record<string, SongStory> = {
     paragraphs: [
       "I have trouble listening to this song. Not because it is bad—I believe it may be one of my best—but because it still hurts. My father’s death hit me hard. We looked alike on the outside, though inside I took more after my mother.",
       "My father shaped my values. He was a good man with a deep sense of responsibility, though he often forgot to care for himself. He has been gone for fifteen years, but when this song plays he is beside me again, showing me how to throw a ball, repair a bicycle, or understand what it means to be a good man—not a “real man,” but a good one.",
+      "There is one grace I will always carry with me: on his final day, I had the chance to tell my father one more time, “I love you.” I am deeply grateful those words were spoken while he could still hear them.",
       "Daddy, the ball never worked out. But the rest of it did.",
     ],
   },
