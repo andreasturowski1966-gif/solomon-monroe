@@ -113,7 +113,7 @@ export const songStories: Record<string, SongStory> = {
       "A partly remembered, partly imagined Southern story about an outsider who refuses to stop singing.",
     paragraphs: [
       "There really was a girl like this when I was growing up in the South. And yes, as a Baptist boy I spent plenty of Sundays in church—though not every Sunday, if we are being honest.",
-      "Most of the plot is imagined. What remains true is the heart of it: a story about the way society treats outsiders, and about a woman who keeps singing her own song anyway.",
+      "Most of the plot is imagined. What remains true is the heart of it: a story about the way society treats outsiders, and about a little girl who keeps singing her own song anyway.",
     ],
   },
   "simply-alive": {
