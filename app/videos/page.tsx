@@ -76,7 +76,7 @@ export default function VideosPage() {
               href="/lyrics"
               className="hidden text-xs font-bold uppercase tracking-[0.2em] text-white/60 transition-colors hover:text-white sm:block"
             >
-              Lyrics
+              Songs &amp; Stories
             </Link>
             <a
               href={channelUrl}
@@ -218,7 +218,7 @@ export default function VideosPage() {
               Messenger
             </a>
             <Link href="/lyrics" className="transition-colors hover:text-[#d99b52]">
-              Lyrics
+              Songbook
             </Link>
             <Link href="/" className="transition-colors hover:text-[#d99b52]">
               Back home

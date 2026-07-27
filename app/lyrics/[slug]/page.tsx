@@ -17,11 +17,11 @@ export async function generateMetadata({
 
   return {
     title: song
-      ? `${song.title} Lyrics | Solomon Monroe`
-      : "Lyrics | Solomon Monroe",
+      ? `${song.title} — Lyrics & Story | Solomon Monroe`
+      : "Songs & Stories | Solomon Monroe",
     description: song
-      ? `Read the lyrics to ${song.title} by Solomon Monroe.`
-      : "Lyrics by Solomon Monroe.",
+      ? `Read the lyrics and the story behind ${song.title} by Solomon Monroe.`
+      : "Lyrics and stories by Solomon Monroe.",
   };
 }
 
@@ -59,7 +59,7 @@ export default async function SongLyricsPage({
               href="/lyrics"
               className="text-[0.65rem] font-bold uppercase tracking-[0.18em] text-[#d99b52] transition-colors hover:text-[#e7ae6c] sm:text-xs"
             >
-              Back to all lyrics
+              Back to songbook
             </Link>
             <Link
               href="/#music"
@@ -80,7 +80,29 @@ export default async function SongLyricsPage({
             {song.title}
           </h1>
 
+          {song.story && (
+            <section className="mt-14 border-y border-[#d99b52]/20 bg-[#17120e] px-6 py-10 sm:px-10 sm:py-12">
+              <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#c47f3d]">
+                Behind the song
+              </p>
+              <p className="mt-5 font-serif text-2xl italic leading-9 text-[#d7b98d] sm:text-3xl sm:leading-10">
+                {song.story.teaser}
+              </p>
+              <div className="mt-8 space-y-5 text-base leading-8 text-white/62 sm:text-lg">
+                {song.story.paragraphs.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
+              </div>
+              <p className="mt-8 text-right font-serif text-xl italic text-[#d99b52]">
+                — Solomon
+              </p>
+            </section>
+          )}
+
           <div className="mt-16 border-t border-white/10 pt-12">
+            <p className="mb-10 text-xs font-bold uppercase tracking-[0.3em] text-[#c47f3d]">
+              Lyrics
+            </p>
             {song.stanzas.map((stanza, stanzaIndex) => (
               <p
                 key={stanzaIndex}

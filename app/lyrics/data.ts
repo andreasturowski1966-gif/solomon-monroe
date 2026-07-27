@@ -1,11 +1,13 @@
 import fs from "node:fs";
 import path from "node:path";
+import { songStories, type SongStory } from "./stories";
 
 export type Song = {
   slug: string;
   title: string;
   number: string;
   stanzas: string[][];
+  story?: SongStory;
 };
 
 const lyricsDirectory = path.join(process.cwd(), "content", "lyrics");
@@ -44,10 +46,13 @@ function readSongs(): Song[] {
       .replace(/^\uFEFF/, "")
       .trim();
 
+    const slug = slugify(title);
+
     return {
-      slug: slugify(title),
+      slug,
       title,
       number: String(index + 1).padStart(2, "0"),
+      story: songStories[slug],
       stanzas: text
         .split(/\r?\n\s*\r?\n/)
         .map((stanza) => stanza.split(/\r?\n/).map((line) => line.trimEnd())),

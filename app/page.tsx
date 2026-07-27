@@ -15,7 +15,7 @@ const navigation = [
   { label: "Videos", href: "/videos" },
   { label: "Life", href: "#life" },
   { label: "Gallery", href: "#gallery" },
-  { label: "Lyrics", href: "/lyrics" },
+  { label: "Songs & Stories", href: "/lyrics" },
 ];
 
 const chapters = [
@@ -245,7 +245,8 @@ export default function Home() {
               ))}
             </div>
             <Link href="/lyrics" className="mt-8 inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-[#d99b52] transition-colors hover:text-[#e7ae6c]">
-              Read all {songs.length} lyrics <span aria-hidden="true">&rarr;</span>
+              Explore all songs &amp; stories{" "}
+              <span aria-hidden="true">&rarr;</span>
             </Link>
           </div>
           <div className="relative aspect-[4/5] overflow-hidden bg-[#1d1712]">
@@ -387,7 +388,7 @@ export default function Home() {
                 href="/lyrics"
                 className="text-xs font-bold uppercase tracking-[0.22em] text-white/55 transition-colors hover:text-[#d99b52]"
               >
-                Lyrics
+                Songs &amp; Stories
               </Link>
             </div>
             <a

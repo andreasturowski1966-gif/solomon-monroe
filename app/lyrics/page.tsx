@@ -4,8 +4,9 @@ import Link from "next/link";
 import { songs } from "./data";
 
 export const metadata: Metadata = {
-  title: "Lyrics | Solomon Monroe",
-  description: "Read the lyrics to the released songs by Solomon Monroe.",
+  title: "Songs & Stories | Solomon Monroe",
+  description:
+    "Read Solomon Monroe's lyrics and discover the personal stories behind the songs.",
 };
 
 export default function LyricsPage() {
@@ -41,14 +42,14 @@ export default function LyricsPage() {
         <div className="mx-auto flex min-h-[58vh] max-w-7xl items-end px-5 py-16 sm:px-8 sm:py-20">
           <div className="max-w-3xl">
             <p className="text-xs font-bold uppercase tracking-[0.32em] text-[#d99b52]">
-              The songbook
+              Words, memories &amp; music
             </p>
             <h1 className="mt-5 font-serif text-6xl leading-none tracking-[-0.04em] sm:text-8xl">
-              Lyrics
+              Songs &amp; Stories
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-white/72">
-              Songs about love, dignity, freedom, friendship, and finding the
-              strength to rise again.
+              The lyrics, the memories, and the real-life moments that gave
+              each song its voice.
             </p>
           </div>
         </div>
@@ -59,7 +60,7 @@ export default function LyricsPage() {
           <div className="grid gap-8 border-b border-white/10 pb-12 md:grid-cols-[1fr_2fr]">
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#c47f3d]">
-                Released songs
+                The songbook
               </p>
               <p className="mt-3 text-sm text-white/45">
                 {songs.length} songs available
@@ -86,8 +87,13 @@ export default function LyricsPage() {
                 <span className="text-xs font-bold tracking-[0.2em] text-white/35">
                   {song.number}
                 </span>
-                <span className="font-serif text-3xl text-[#f3eadb] transition-colors group-hover:text-[#d99b52] sm:text-4xl">
-                  {song.title}
+                <span>
+                  <span className="block font-serif text-3xl text-[#f3eadb] transition-colors group-hover:text-[#d99b52] sm:text-4xl">
+                    {song.title}
+                  </span>
+                  <span className="mt-2 block max-w-2xl text-sm leading-6 text-white/45">
+                    {song.story?.teaser ?? "Lyrics from the Solomon Monroe songbook."}
+                  </span>
                 </span>
                 <span
                   className="text-2xl text-white/35 transition-transform group-hover:translate-x-1 group-hover:text-[#d99b52]"
