@@ -55,11 +55,11 @@ export default async function SongLyricsPage({
             fill
             priority
             sizes="100vw"
-            className="object-cover object-center opacity-55 grayscale-[10%]"
+              className="object-cover object-center opacity-70 grayscale-[5%]"
           />
-          <div className="absolute inset-0 bg-[#0d0b09]/42" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,transparent_0%,rgba(13,11,9,0.2)_58%,rgba(13,11,9,0.68)_100%)]" />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#0d0b09]/25 via-transparent to-[#0d0b09]/75" />
+          <div className="absolute inset-0 bg-[#0d0b09]/28" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,transparent_0%,rgba(13,11,9,0.12)_58%,rgba(13,11,9,0.52)_100%)]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0d0b09]/15 via-transparent to-[#0d0b09]/62" />
         </div>
       )}
       <header className="sticky top-0 z-20 border-b border-white/10 bg-[#0d0b09]/92 backdrop-blur-xl">
