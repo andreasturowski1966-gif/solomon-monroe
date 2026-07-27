@@ -34,14 +34,14 @@ a {
 
 .hero-image {
   background-color: #17110c;
-  background-image: url("/images/hero/solomon-stage.png");
-  background-position: 60% center;
+  background-image: url("/images/hero/solomon-stage-v2.png");
+  background-position: 72% center;
   background-size: cover;
 }
 
 @media (max-width: 639px) {
   .hero-image {
-    background-position: 68% center;
+    background-position: 73% center;
   }
 }
 
