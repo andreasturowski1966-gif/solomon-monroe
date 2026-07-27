@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import ExternalEmbed from "../components/ExternalEmbed";
 
 export const metadata: Metadata = {
   title: "Music Videos | Solomon Monroe",
@@ -46,16 +47,14 @@ function VideoPlayer({
 
   return (
     <div className="overflow-hidden bg-black shadow-2xl shadow-black/35">
-      <div className="aspect-video">
-        <iframe
-          src={`https://www.youtube-nocookie.com/embed/${id}?rel=0${playlistParam}`}
-          title={`${title} — Solomon Monroe`}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-          loading="lazy"
-          className="h-full w-full border-0"
-        />
-      </div>
+      <ExternalEmbed
+        provider="YouTube"
+        src={`https://www.youtube-nocookie.com/embed/${id}?rel=0${playlistParam}`}
+        title={`${title} — Solomon Monroe`}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+        containerClassName="aspect-video"
+      />
     </div>
   );
 }
