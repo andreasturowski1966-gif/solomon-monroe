@@ -30,17 +30,22 @@ export default function LanguageSwitcher({
 
   useEffect(() => {
     const savedLocale = window.localStorage.getItem("solomon-language");
-    if (
-      (savedLocale === "en" || savedLocale === "de") &&
-      savedLocale !== currentLocale
-    ) {
-      router.replace(pathForLocale(pathname, savedLocale));
+    const preferredLocale =
+      savedLocale === "en" || savedLocale === "de"
+        ? savedLocale
+        : window.navigator.languages.some((language) =>
+              language.toLowerCase().startsWith("de"),
+            )
+          ? "de"
+          : "en";
+
+    if (preferredLocale !== currentLocale) {
+      router.replace(pathForLocale(pathname, preferredLocale));
     }
   }, [currentLocale, pathname, router]);
 
   function rememberLanguage(locale: "en" | "de") {
     window.localStorage.setItem("solomon-language", locale);
-    document.cookie = `solomon-language=${locale}; path=/; max-age=31536000; samesite=lax`;
   }
 
   return (

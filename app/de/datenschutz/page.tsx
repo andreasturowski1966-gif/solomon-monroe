@@ -99,13 +99,16 @@ export default function GermanPrivacyPage() {
           <section className={sectionClass}>
             <h2 className={headingClass}>4. Spracheinstellung</h2>
             <p>
-              Wenn Sie eine Sprache auswählen, speichern wir diese Auswahl im
-              lokalen Speicher Ihres Browsers und in einem funktionalen Cookie
-              namens „solomon-language“. Dies dient ausschließlich dazu, Ihre
-              ausdrücklich gewählte Sprache bereitzustellen. Rechtsgrundlage
-              ist § 25 Abs. 2 Nr. 2 TDDDG und Art. 6 Abs. 1 lit. f DSGVO. Das
-              Cookie wird längstens ein Jahr gespeichert. Sie können es über
-              Ihre Browsereinstellungen löschen.
+              Beim ersten Besuch wird die Spracheinstellung Ihres Browsers
+              ausschließlich lokal ausgewertet, um eine passende Sprache
+              anzuzeigen. Diese Information wird von uns weder übertragen noch
+              gespeichert. Wenn Sie selbst eine Sprache auswählen, wird diese
+              Auswahl im lokalen Speicher Ihres Browsers hinterlegt. Sie dient
+              ausschließlich dazu, die von Ihnen gewünschte Sprache
+              bereitzustellen. Dafür wird kein Cookie gesetzt. Rechtsgrundlage
+              ist § 25 Abs. 2 Nr. 2 TDDDG und Art. 6 Abs. 1 lit. f DSGVO. Sie
+              können die gespeicherte Auswahl über Ihre Browsereinstellungen
+              löschen.
             </p>
           </section>
 

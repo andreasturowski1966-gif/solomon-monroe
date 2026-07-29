@@ -11,7 +11,7 @@ export const homeCopy = {
       ["Gallery", "#gallery"],
       ["Songs & Stories", "/lyrics"],
     ],
-    tagline: "Southern Soul · Stories lived in",
+    tagline: "Southern Soul · Stories from a life well lived",
     intro:
       "A lifetime in the making. Soul music shaped by hard work, classrooms, second chances, and the courage to begin again. Every song carries a story—and here, Solomon shares the life behind the lyrics.",
     meet: "Meet Solomon",
@@ -22,7 +22,7 @@ export const homeCopy = {
     storyEyebrow: "His story",
     storyTitle: "A voice seasoned by life.",
     storyIntro:
-      "Solomon Monroe was born in 1966 in the American South. Music arrived early, but the road toward becoming an artist took the long way around.",
+      "Solomon Monroe was born in 1966 in the American South. Music entered his life early, but his journey to becoming an artist took the long way around.",
     chapters: [
       {
         year: "1966",
@@ -58,7 +58,7 @@ export const homeCopy = {
       ["Southern Soul", "Warm, human, unhurried"],
       ["Blues & Gospel", "Roots that still show"],
       ["Storytelling", "The truth behind every song"],
-      ["Second Chances", "No dream too late"],
+      ["Second Chances", "It's never too late to dream"],
     ],
     explore: "Explore all songs & stories",
     listenNow: "Listen now",
@@ -99,24 +99,24 @@ export const homeCopy = {
     heart: "Worum es im Herzen geht",
     quote: "„Träume haben kein Verfallsdatum.“",
     storyEyebrow: "Seine Geschichte",
-    storyTitle: "Eine Stimme, gereift durch das Leben.",
+    storyTitle: "Eine Stimme, vom Leben geprägt.",
     storyIntro:
       "Solomon Monroe wurde 1966 im Süden der USA geboren. Die Musik begleitete ihn von klein auf, doch bis zu seinem Leben als Künstler sollte es noch ein langer Weg sein.",
     chapters: [
       {
         year: "1966",
         title: "Geboren zwischen Stahl und Musik",
-        text: "Solomon wuchs im amerikanischen Süden auf – geprägt von den verlässlichen Händen seines Vaters, eines Stahlarbeiters, und dem musikalischen Gehör seiner Mutter, die Musik unterrichtete.",
+        text: "Solomon wuchs im Süden der USA auf. Von seinem Vater, einem Stahlarbeiter, lernte er den Wert ehrlicher, harter Arbeit. Seine Mutter war Musiklehrerin und weckte schon früh seine Liebe zur Musik.",
       },
       {
         year: "Als junger Mann",
-        title: "Ein Weg, der nicht seiner war",
-        text: "Nach der Highschool folgte er seinem Vater ins Stahlwerk. Er hatte großen Respekt vor dieser Arbeit, merkte aber schon bald, dass sein eigener Weg woanders lag.",
+        title: "Der falsche Weg",
+        text: "Nach der Highschool trat Solomon zunächst in die Fußstapfen seines Vaters und begann im Stahlwerk. Er hatte großen Respekt vor dieser Arbeit, merkte aber schon bald, dass sein eigener Weg woanders lag.",
       },
       {
         year: "Studienjahre",
-        title: "Tagsüber Seminarraum, nachts Soulclubs",
-        text: "Solomon studierte Musik und Englisch auf Lehramt. Abends spielte er in Bars und kleinen Soulclubs – und lernte dort, wie ehrlich ein Song sein kann.",
+        title: "Tagsüber im Klassenzimmer, nachts in Soulclubs",
+        text: "Solomon studierte Musik und Englisch auf Lehramt. Abends stand er in Bars und kleinen Soulclubs auf der Bühne. Dort lernte er, wie viel Wahrheit in einem Song stecken kann.",
       },
       {
         year: "Ein Berufsleben",
@@ -141,7 +141,7 @@ export const homeCopy = {
     ],
     explore: "Alle Songs & Geschichten entdecken",
     listenNow: "Jetzt anhören",
-    servicesTitle: "Finde Solomon bei deinem bevorzugten Musikdienst.",
+    servicesTitle: "Hör Solomon bei deinem Lieblings-Musikdienst.",
     servicesText:
       "Folge Solomons offiziellem Künstlerprofil, damit du keine neue Veröffentlichung verpasst.",
     openSpotify: "Spotify öffnen",

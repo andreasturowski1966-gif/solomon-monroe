@@ -117,12 +117,14 @@ export default function DatenschutzPage() {
           <section className={sectionClass}>
             <h2 className={headingClass}>4. Language Preference</h2>
             <p>
-              When you select a language, we save that choice in your browser’s
-              local storage and in a functional cookie named
-              “solomon-language.” This is used solely to provide the language
-              you expressly selected. The legal basis is Section 25(2)(2)
-              TDDDG and Article 6(1)(f) GDPR. The cookie is stored for no more
-              than one year and can be deleted through your browser settings.
+              On your first visit, your browser’s language setting is evaluated
+              locally to display a suitable language. This information is not
+              transmitted or stored by us. If you actively select a language,
+              that choice is saved in your browser’s local storage. It is used
+              solely to provide the language you expressly selected. No cookie
+              is set for this purpose. The legal basis is Section 25(2)(2)
+              TDDDG and Article 6(1)(f) GDPR. You can delete the saved choice
+              through your browser settings.
             </p>
           </section>
 
