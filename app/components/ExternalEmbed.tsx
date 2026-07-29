@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { localePath, type Locale } from "../i18n";
 
 type ExternalEmbedProps = {
   provider: "Spotify" | "YouTube";
@@ -11,6 +12,7 @@ type ExternalEmbedProps = {
   containerClassName: string;
   iframeClassName?: string;
   allowFullScreen?: boolean;
+  locale?: Locale;
 };
 
 export default function ExternalEmbed({
@@ -21,8 +23,10 @@ export default function ExternalEmbed({
   containerClassName,
   iframeClassName = "h-full w-full border-0",
   allowFullScreen = false,
+  locale = "en",
 }: ExternalEmbedProps) {
   const [isLoaded, setIsLoaded] = useState(false);
+  const isGerman = locale === "de";
 
   if (isLoaded) {
     return (
@@ -44,26 +48,29 @@ export default function ExternalEmbed({
     >
       <div className="max-w-lg">
         <p className="text-[0.65rem] font-bold uppercase tracking-[0.28em] text-[#d99b52]">
-          External content
+          {isGerman ? "Externer Inhalt" : "External content"}
         </p>
         <p className="mt-4 text-sm leading-6 text-white/60">
-          Loading this {provider} content connects your browser to {provider}.
-          Data may be processed outside the EU.
+          {isGerman
+            ? `Beim Laden dieses ${provider}-Inhalts verbindet sich dein Browser mit ${provider}. Daten können außerhalb der EU verarbeitet werden.`
+            : `Loading this ${provider} content connects your browser to ${provider}. Data may be processed outside the EU.`}
         </p>
         <button
           type="button"
           onClick={() => setIsLoaded(true)}
           className="mt-6 inline-flex min-h-11 items-center justify-center bg-[#b56c2e] px-6 text-[0.65rem] font-bold uppercase tracking-[0.18em] text-white transition-colors hover:bg-[#cb8240]"
         >
-          Load {provider}
+          {isGerman ? `${provider} laden` : `Load ${provider}`}
         </button>
         <p className="mt-4 text-[0.68rem] leading-5 text-white/35">
-          By loading, you consent to this data transfer.{" "}
+          {isGerman
+            ? "Mit dem Laden stimmst du dieser Datenübertragung zu."
+            : "By loading, you consent to this data transfer."}{" "}
           <Link
-            href="/datenschutz"
+            href={localePath(locale, "/datenschutz")}
             className="underline decoration-white/20 underline-offset-4 transition-colors hover:text-white/60"
           >
-            Privacy details
+            {isGerman ? "Datenschutzhinweise" : "Privacy details"}
           </Link>
         </p>
       </div>

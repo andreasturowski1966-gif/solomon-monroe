@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import LanguageSwitcher from "../components/LanguageSwitcher";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Solomon Monroe",
@@ -18,12 +19,15 @@ export default function DatenschutzPage() {
   return (
     <main className="min-h-screen bg-[#0d0b09] px-5 py-16 text-[#eee1ce] sm:px-8 sm:py-24">
       <div className="mx-auto max-w-3xl">
-        <Link
-          href="/"
-          className="text-[0.65rem] font-bold uppercase tracking-[0.24em] text-[#d99b52] transition-colors hover:text-[#e7ae6c]"
-        >
-          ← Back home
-        </Link>
+        <div className="flex items-center justify-between gap-5">
+          <Link
+            href="/"
+            className="text-[0.65rem] font-bold uppercase tracking-[0.24em] text-[#d99b52] transition-colors hover:text-[#e7ae6c]"
+          >
+            ← Back home
+          </Link>
+          <LanguageSwitcher currentLocale="en" />
+        </div>
 
         <header className="mt-12 border-b border-white/10 pb-10">
           <p className="text-[0.65rem] font-bold uppercase tracking-[0.3em] text-[#c47f3d]">
@@ -32,7 +36,7 @@ export default function DatenschutzPage() {
           <h1 className="mt-4 font-serif text-5xl tracking-[-0.04em] sm:text-7xl">
             Privacy Policy / Datenschutz
           </h1>
-          <p className="mt-5 text-sm text-white/40">Last updated: July 27, 2026</p>
+          <p className="mt-5 text-sm text-white/40">Last updated: July 29, 2026</p>
         </header>
 
         <div className="mt-12 space-y-12 text-sm leading-7 text-white/65 sm:text-base">
@@ -111,7 +115,19 @@ export default function DatenschutzPage() {
           </section>
 
           <section className={sectionClass}>
-            <h2 className={headingClass}>4. Embedded Spotify Player</h2>
+            <h2 className={headingClass}>4. Language Preference</h2>
+            <p>
+              When you select a language, we save that choice in your browser’s
+              local storage and in a functional cookie named
+              “solomon-language.” This is used solely to provide the language
+              you expressly selected. The legal basis is Section 25(2)(2)
+              TDDDG and Article 6(1)(f) GDPR. The cookie is stored for no more
+              than one year and can be deleted through your browser settings.
+            </p>
+          </section>
+
+          <section className={sectionClass}>
+            <h2 className={headingClass}>5. Embedded Spotify Player</h2>
             <p>
               The Spotify player is blocked by default. A connection to Spotify
               is established only after you select “Load Spotify.” Spotify may
@@ -139,7 +155,7 @@ export default function DatenschutzPage() {
           </section>
 
           <section className={sectionClass}>
-            <h2 className={headingClass}>5. Embedded YouTube Videos</h2>
+            <h2 className={headingClass}>6. Embedded YouTube Videos</h2>
             <p>
               YouTube videos are embedded in privacy-enhanced mode through
               youtube-nocookie.com and are blocked by default. A connection to
@@ -170,7 +186,7 @@ export default function DatenschutzPage() {
           </section>
 
           <section className={sectionClass}>
-            <h2 className={headingClass}>6. External Links</h2>
+            <h2 className={headingClass}>7. External Links</h2>
             <p>
               This website links to Spotify, Amazon Music, YouTube, and Meta’s
               Facebook and Messenger services. Merely viewing our website does
@@ -221,7 +237,7 @@ export default function DatenschutzPage() {
           </section>
 
           <section className={sectionClass}>
-            <h2 className={headingClass}>7. Cookies and Analytics</h2>
+            <h2 className={headingClass}>8. Cookies and Analytics</h2>
             <p>
               We do not use our own analytics or marketing services on this
               website. Your decision to load external embedded content is not
@@ -231,7 +247,7 @@ export default function DatenschutzPage() {
           </section>
 
           <section className={sectionClass}>
-            <h2 className={headingClass}>8. Your Rights</h2>
+            <h2 className={headingClass}>9. Your Rights</h2>
             <p>
               Subject to the requirements of the GDPR, you have the right to
               access, rectify, erase, and restrict the processing of your

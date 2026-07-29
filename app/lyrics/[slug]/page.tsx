@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getSong, songs } from "../data";
+import LanguageSwitcher from "../../components/LanguageSwitcher";
+import { localePath, type Locale } from "../../i18n";
+import { getSong, getSongs, songs } from "../data";
 
 export function generateStaticParams() {
   return songs.map((song) => ({ slug: song.slug }));
@@ -26,21 +28,54 @@ export async function generateMetadata({
   };
 }
 
-export default async function SongLyricsPage({
-  params,
+const songCopy = {
+  en: {
+    home: "HOME",
+    songNavigation: "Song navigation",
+    backToSongbook: "Back to songbook",
+    music: "Music",
+    song: "Song",
+    behind: "Behind the song",
+    lyrics: "Original lyrics",
+    translationNote: "",
+    previous: "Previous song",
+    next: "Next song",
+    moreSongs: "More songs",
+  },
+  de: {
+    home: "STARTSEITE",
+    songNavigation: "Songnavigation",
+    backToSongbook: "Zurück zum Songbuch",
+    music: "Musik",
+    song: "Song",
+    behind: "Die Geschichte hinter dem Song",
+    lyrics: "Deutsche Übersetzung",
+    translationNote:
+      "Sinngemäße Übersetzung des englischen Originaltexts. Rhythmus, Reime und Mehrdeutigkeiten können abweichen.",
+    previous: "Vorheriger Song",
+    next: "Nächster Song",
+    moreSongs: "Weitere Songs",
+  },
+} as const;
+
+export function SongLyricsContent({
+  slug,
+  locale,
 }: {
-  params: Promise<{ slug: string }>;
+  slug: string;
+  locale: Locale;
 }) {
-  const { slug } = await params;
-  const song = getSong(slug);
+  const copy = songCopy[locale];
+  const localizedSongs = getSongs(locale);
+  const song = getSong(slug, locale);
 
   if (!song) {
     notFound();
   }
 
-  const songIndex = songs.findIndex((item) => item.slug === slug);
-  const previousSong = songs[songIndex - 1];
-  const nextSong = songs[songIndex + 1];
+  const songIndex = localizedSongs.findIndex((item) => item.slug === slug);
+  const previousSong = localizedSongs[songIndex - 1];
+  const nextSong = localizedSongs[songIndex + 1];
 
   return (
     <main className="relative isolate min-h-screen overflow-hidden bg-[#0d0b09] text-[#f3eadb]">
@@ -65,27 +100,28 @@ export default async function SongLyricsPage({
       <header className="sticky top-0 z-20 border-b border-white/10 bg-[#0d0b09]/92 backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-5 sm:px-8">
           <Link
-            href="/"
+            href={localePath(locale, "/")}
             className="font-serif text-lg tracking-[0.12em] transition-colors hover:text-[#d99b52]"
           >
-            HOME
+            {copy.home}
           </Link>
           <nav
             className="flex items-center gap-5 sm:gap-7"
-            aria-label="Song navigation"
+            aria-label={copy.songNavigation}
           >
             <Link
-              href="/lyrics"
+              href={localePath(locale, "/lyrics")}
               className="text-[0.65rem] font-bold uppercase tracking-[0.18em] text-[#d99b52] transition-colors hover:text-[#e7ae6c] sm:text-xs"
             >
-              Back to songbook
+              {copy.backToSongbook}
             </Link>
             <Link
-              href="/#music"
+              href={localePath(locale, "/#music")}
               className="hidden text-xs font-bold uppercase tracking-[0.2em] text-white/55 transition-colors hover:text-white sm:block"
             >
-              Music
+              {copy.music}
             </Link>
+            <LanguageSwitcher currentLocale={locale} />
           </nav>
         </div>
       </header>
@@ -93,7 +129,7 @@ export default async function SongLyricsPage({
       <article className="relative z-10 px-5 py-16 sm:px-8 sm:py-24">
         <div className="mx-auto max-w-3xl">
           <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#c47f3d]">
-            Solomon Monroe · Song {song.number}
+            Solomon Monroe · {copy.song} {song.number}
           </p>
           <h1 className="mt-6 font-serif text-5xl leading-[0.95] tracking-[-0.04em] sm:text-7xl">
             {song.title}
@@ -102,7 +138,7 @@ export default async function SongLyricsPage({
           {song.story && (
             <section className="mt-14 border-y border-[#d99b52]/20 bg-[#17120e] px-6 py-10 sm:px-10 sm:py-12">
               <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#c47f3d]">
-                Behind the song
+                {copy.behind}
               </p>
               <p className="mt-5 font-serif text-2xl italic leading-9 text-[#d7b98d] sm:text-3xl sm:leading-10">
                 {song.story.teaser}
@@ -120,8 +156,13 @@ export default async function SongLyricsPage({
 
           <div className="mt-16 border-t border-white/10 pt-12">
             <p className="mb-10 text-xs font-bold uppercase tracking-[0.3em] text-[#c47f3d]">
-              Lyrics
+              {copy.lyrics}
             </p>
+            {copy.translationNote && (
+              <p className="-mt-6 mb-10 max-w-2xl text-sm leading-6 text-white/45">
+                {copy.translationNote}
+              </p>
+            )}
             {song.stanzas.map((stanza, stanzaIndex) => (
               <p
                 key={stanzaIndex}
@@ -138,15 +179,15 @@ export default async function SongLyricsPage({
 
           <nav
             className="mt-20 grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2"
-            aria-label="More songs"
+            aria-label={copy.moreSongs}
           >
             {previousSong ? (
               <Link
-                href={`/lyrics/${previousSong.slug}`}
+                href={localePath(locale, `/lyrics/${previousSong.slug}`)}
                 className="bg-[#15110e] p-6 transition-colors hover:bg-[#211a15]"
               >
                 <span className="text-[0.65rem] font-bold uppercase tracking-[0.22em] text-white/38">
-                  Previous song
+                  {copy.previous}
                 </span>
                 <span className="mt-2 block font-serif text-xl">
                   ← {previousSong.title}
@@ -157,11 +198,11 @@ export default async function SongLyricsPage({
             )}
             {nextSong ? (
               <Link
-                href={`/lyrics/${nextSong.slug}`}
+                href={localePath(locale, `/lyrics/${nextSong.slug}`)}
                 className="bg-[#15110e] p-6 text-right transition-colors hover:bg-[#211a15]"
               >
                 <span className="text-[0.65rem] font-bold uppercase tracking-[0.22em] text-white/38">
-                  Next song
+                  {copy.next}
                 </span>
                 <span className="mt-2 block font-serif text-xl">
                   {nextSong.title} →
@@ -175,4 +216,13 @@ export default async function SongLyricsPage({
       </article>
     </main>
   );
+}
+
+export default async function SongLyricsPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  return <SongLyricsContent slug={slug} locale="en" />;
 }
