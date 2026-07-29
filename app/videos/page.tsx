@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   title: "Music Videos | Solomon Monroe",
   description:
     "Watch the official long-form music videos by Southern soul artist Solomon Monroe.",
+  alternates: {
+    languages: {
+      en: "/videos",
+      de: "/de/videos",
+      fr: "/fr/videos",
+      es: "/es/videos",
+    },
+  },
 };
 
 const channelUrl = "https://www.youtube.com/@SolomonMonroe-Soul-Music";
@@ -106,6 +114,48 @@ const videoCopy = {
     visit: "Zum YouTube-Kanal",
     songbook: "Songbuch",
     back: "Zur Startseite",
+  },
+  fr: {
+    home: "ACCUEIL",
+    songs: "Chansons & histoires",
+    channel: "Chaîne YouTube",
+    eyebrow: "À l’écran",
+    title: "Clips",
+    titleAccent: "Musicaux",
+    intro:
+      "Des chansons qui prennent une autre dimension grâce à des interprétations intimes, des récits en images et toute la chaleur de la soul du Sud.",
+    latest: "Dernière sortie",
+    latestText: "Le tout dernier chapitre musical de Solomon Monroe.",
+    recent: "Clips récents",
+    recentTitle: "D’autres histoires prennent vie.",
+    official: "Clip musical officiel",
+    collection: "La collection vidéo",
+    all: "Tous les clips en version intégrale.",
+    allText: `Retrouvez les ${videos.length} clips musicaux en version intégrale au même endroit. Les Shorts ne font volontairement pas partie de cette sélection.`,
+    visit: "Voir la chaîne YouTube",
+    songbook: "Chansons",
+    back: "Retour à l’accueil",
+  },
+  es: {
+    home: "INICIO",
+    songs: "Canciones e historias",
+    channel: "Canal de YouTube",
+    eyebrow: "En imágenes",
+    title: "Vídeos",
+    titleAccent: "Musicales",
+    intro:
+      "Canciones que cobran una nueva vida a través de actuaciones íntimas, historias cinematográficas y toda la calidez del southern soul.",
+    latest: "Último lanzamiento",
+    latestText: "El capítulo más reciente de Solomon Monroe, en su versión completa.",
+    recent: "Vídeos recientes",
+    recentTitle: "Más historias que cobran vida.",
+    official: "Vídeo musical oficial",
+    collection: "La colección de vídeos",
+    all: "Todos los vídeos completos.",
+    allText: `Disfruta de los ${videos.length} vídeos musicales completos en un solo lugar. Los Shorts se han dejado fuera de esta selección de forma intencionada.`,
+    visit: "Visitar el canal de YouTube",
+    songbook: "Canciones",
+    back: "Volver al inicio",
   },
 } as const;
 

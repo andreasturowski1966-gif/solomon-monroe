@@ -12,15 +12,15 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const song = getSong(slug, "de");
+  const song = getSong(slug, "fr");
 
   return {
     title: song
-      ? `${song.title} — Songtext & Geschichte | Solomon Monroe`
-      : "Songs & Geschichten | Solomon Monroe",
+      ? `${song.title} — Paroles & histoire | Solomon Monroe`
+      : "Chansons & histoires | Solomon Monroe",
     description: song
-      ? `Lies den Songtext und die persönliche Geschichte hinter ${song.title} von Solomon Monroe.`
-      : "Songtexte und Geschichten von Solomon Monroe.",
+      ? `Lisez les paroles et découvrez l’histoire personnelle de « ${song.title} » par Solomon Monroe.`
+      : "Les paroles et les histoires de Solomon Monroe.",
     alternates: song
       ? {
           languages: {
@@ -34,11 +34,11 @@ export async function generateMetadata({
   };
 }
 
-export default async function GermanSongLyricsPage({
+export default async function FrenchSongLyricsPage({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  return <SongLyricsContent slug={slug} locale="de" />;
+  return <SongLyricsContent slug={slug} locale="fr" />;
 }

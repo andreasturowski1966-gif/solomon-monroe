@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ExternalEmbed from "./components/ExternalEmbed";
@@ -5,6 +6,15 @@ import LanguageSwitcher from "./components/LanguageSwitcher";
 import { homeCopy } from "./home-copy";
 import { localePath, type Locale } from "./i18n";
 import { getSongs } from "./lyrics/data";
+
+export const metadata: Metadata = {
+  title: "Solomon Monroe | Southern Soul",
+  description:
+    "The official home of Solomon Monroe — Southern soul, stories from a life well lived, and proof that it is never too late to dream.",
+  alternates: {
+    languages: { en: "/", de: "/de", fr: "/fr", es: "/es" },
+  },
+};
 
 const streamingLinks = {
   spotify:

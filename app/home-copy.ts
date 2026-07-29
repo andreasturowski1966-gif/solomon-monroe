@@ -157,4 +157,162 @@ export const homeCopy = {
     songsStories: "Songs & Geschichten",
     messenger: "Nachricht über Messenger",
   },
+  fr: {
+    home: "Accueil",
+    mainNavigation: "Navigation principale",
+    menu: "Menu",
+    navigation: [
+      ["Son histoire", "#story"],
+      ["Musique", "#music"],
+      ["Vidéos", "/videos"],
+      ["Sa vie", "#life"],
+      ["Galerie", "#gallery"],
+      ["Chansons & histoires", "/lyrics"],
+    ],
+    tagline: "Southern Soul · Les histoires d’une vie",
+    intro:
+      "Derrière cette musique, il y a toute une vie : le travail, des années passées en classe, les secondes chances et le courage de repartir. Chaque chanson a son histoire. Ici, Solomon raconte la part de sa vie qui se cache derrière les paroles.",
+    meet: "Découvrir Solomon",
+    musicStories: "La musique — Les histoires",
+    videos: "Les vidéos",
+    heart: "L’essentiel",
+    quote: "« Les rêves n’ont pas de date d’expiration. »",
+    storyEyebrow: "Son histoire",
+    storyTitle: "Une voix façonnée par la vie.",
+    storyIntro:
+      "Solomon Monroe est né en 1966 dans le Sud des États-Unis. La musique l’accompagne depuis l’enfance, mais le chemin qui devait faire de lui un artiste a été long et sinueux.",
+    chapters: [
+      {
+        year: "1966",
+        title: "Entre l’acier et la musique",
+        text: "Solomon a grandi dans le Sud des États-Unis. Son père, ouvrier sidérurgiste, lui a transmis le respect du travail bien fait. Sa mère, professeure de musique, lui a donné très tôt le goût des mélodies.",
+      },
+      {
+        year: "Jeune homme",
+        title: "Une voie qui n’était pas la sienne",
+        text: "Après le lycée, Solomon a d’abord suivi les traces de son père à l’aciérie. Il respectait profondément ce métier, mais il a vite compris que sa place était ailleurs.",
+      },
+      {
+        year: "Années d’études",
+        title: "En classe le jour, dans les clubs de soul la nuit",
+        text: "Solomon a étudié la musique et l’anglais pour devenir enseignant. Le soir, il jouait dans des bars et de petits clubs de soul. C’est là qu’il a appris toute la vérité qu’une chanson peut contenir.",
+      },
+      {
+        year: "Toute une carrière",
+        title: "Le professeur trouve enfin sa voix",
+        text: "Pendant des décennies, il a appris à ses lycéens à lire avec attention, à écouter vraiment et à faire confiance à leur propre voix. Bien plus tard, il s’est enfin autorisé à suivre pleinement la sienne.",
+      },
+    ],
+    musicEyebrow: "La musique & les histoires",
+    musicTitle: "Une soul nourrie de toute une vie.",
+    musicIntro:
+      "La soul du Sud rencontre le blues, le gospel et les récits d’un homme qui a beaucoup vécu. Ces chansons parlent d’aimer de nouveau après une déception, de dignité, de pardon, de famille et du courage de choisir enfin sa propre voie. Ouvrez une chanson, lisez les paroles et découvrez le souvenir, la personne ou le tournant qui l’a inspirée.",
+    moreThanLyrics: "Bien plus que des paroles",
+    everySong: "Chaque chanson a une histoire.",
+    storyCard:
+      "Derrière ces chansons, il y a un cancer, deux mariages, une fille, la disparition d’un père, des années difficiles, des secondes chances et toutes les leçons d’une vie que Solomon a choisi de mettre en musique.",
+    discover: "Découvrir les histoires",
+    features: [
+      ["Southern Soul", "Chaleureuse, humaine, sans précipitation"],
+      ["Blues & Gospel", "Des racines toujours présentes"],
+      ["Récits", "La vérité derrière chaque chanson"],
+      ["Secondes chances", "Il n’est jamais trop tard pour rêver"],
+    ],
+    explore: "Découvrir toutes les chansons & leurs histoires",
+    listenNow: "Écouter",
+    servicesTitle: "Retrouvez Solomon sur votre plateforme préférée.",
+    servicesText:
+      "Suivez le profil officiel de Solomon pour ne manquer aucune nouvelle sortie.",
+    openSpotify: "Ouvrir Spotify",
+    openAmazon: "Ouvrir Amazon Music",
+    lifeEyebrow: "La vie loin de la scène",
+    lifeTitle: "Une famille se construit en étant présent.",
+    lifeOne:
+      "Solomon est marié à sa seconde épouse depuis plus de vingt ans. Leur vie commune repose sur l’amitié, la confiance et la décision d’être là l’un pour l’autre, chaque jour.",
+    lifeTwo:
+      "Sa fille, née de son premier mariage, est elle aussi devenue enseignante. Son beau-fils fait tout autant partie de la famille. Pour Solomon, une famille ne se résume pas aux liens du sang : elle se construit par la confiance, la responsabilité et la présence dans les moments qui comptent.",
+    galleryEyebrow: "À son propre rythme",
+    galleryTitle: "L’homme derrière la voix.",
+    songsStories: "Chansons & histoires",
+    messenger: "Écrire sur Messenger",
+  },
+  es: {
+    home: "Inicio",
+    mainNavigation: "Navegación principal",
+    menu: "Menú",
+    navigation: [
+      ["Historia", "#story"],
+      ["Música", "#music"],
+      ["Vídeos", "/videos"],
+      ["Vida", "#life"],
+      ["Galería", "#gallery"],
+      ["Canciones e historias", "/lyrics"],
+    ],
+    tagline: "Southern Soul · Historias de toda una vida",
+    intro:
+      "Detrás de esta música hay toda una vida: trabajo duro, muchos años en las aulas, segundas oportunidades y el valor de volver a empezar. Cada canción tiene su propia historia. Aquí, Solomon cuenta qué parte de su vida vive detrás de cada letra.",
+    meet: "Conoce a Solomon",
+    musicStories: "La música — Las historias",
+    videos: "Los vídeos",
+    heart: "Lo esencial",
+    quote: "«Los sueños no tienen fecha de caducidad».",
+    storyEyebrow: "Su historia",
+    storyTitle: "Una voz moldeada por la vida.",
+    storyIntro:
+      "Solomon Monroe nació en 1966 en el sur de Estados Unidos. La música lo acompañó desde niño, pero el camino hasta convertirse en artista fue largo y dio muchas vueltas.",
+    chapters: [
+      {
+        year: "1966",
+        title: "Entre el acero y la música",
+        text: "Solomon creció en el sur de Estados Unidos. De su padre, trabajador de una acería, aprendió el valor del esfuerzo y del trabajo honrado. Su madre era profesora de música y despertó muy pronto su amor por las canciones.",
+      },
+      {
+        year: "De joven",
+        title: "Un camino que no era el suyo",
+        text: "Al terminar el instituto, Solomon siguió primero los pasos de su padre y entró a trabajar en la acería. Respetaba profundamente aquel oficio, pero no tardó en comprender que su lugar estaba en otra parte.",
+      },
+      {
+        year: "Años universitarios",
+        title: "De día en las aulas, de noche en clubes de soul",
+        text: "Solomon estudió Música e Inglés para ser profesor. Por las noches actuaba en bares y pequeños clubes de soul. Allí aprendió cuánta verdad puede caber en una canción.",
+      },
+      {
+        year: "Toda una carrera",
+        title: "El profesor encuentra su propia voz",
+        text: "Durante décadas enseñó a sus alumnos de instituto a leer con atención, escuchar de verdad y confiar en su propia voz. Mucho después, él también se permitió seguir la suya por completo.",
+      },
+    ],
+    musicEyebrow: "La música y las historias",
+    musicTitle: "Soul con toda una vida detrás.",
+    musicIntro:
+      "El southern soul clásico se encuentra con el blues, el góspel y las historias de un hombre que ha vivido mucho. Estas canciones hablan de volver a amar después de una decepción, de dignidad, perdón, familia y del valor de elegir por fin el propio camino. Abre una canción, lee la letra y descubre qué recuerdo, persona o momento decisivo la inspiró.",
+    moreThanLyrics: "Mucho más que letras",
+    everySong: "Cada canción tiene una historia.",
+    storyCard:
+      "Detrás de estas canciones hay un diagnóstico de cáncer, dos matrimonios, una hija, la pérdida de un padre, épocas difíciles, segundas oportunidades y todas las lecciones de una vida que Solomon decidió convertir en música.",
+    discover: "Descubre las historias",
+    features: [
+      ["Southern Soul", "Cálido, humano, sin prisas"],
+      ["Blues y góspel", "Raíces que siguen presentes"],
+      ["Historias", "La verdad detrás de cada canción"],
+      ["Segundas oportunidades", "Nunca es tarde para soñar"],
+    ],
+    explore: "Descubre todas las canciones y sus historias",
+    listenNow: "Escuchar ahora",
+    servicesTitle: "Escucha a Solomon en tu plataforma favorita.",
+    servicesText:
+      "Sigue el perfil oficial de Solomon para no perderte ningún lanzamiento.",
+    openSpotify: "Abrir Spotify",
+    openAmazon: "Abrir Amazon Music",
+    lifeEyebrow: "La vida fuera del escenario",
+    lifeTitle: "La familia se construye estando presente.",
+    lifeOne:
+      "Solomon lleva más de veinte años casado con su segunda esposa. Su vida en común se apoya en la amistad, la confianza y la decisión de estar el uno para el otro cada día.",
+    lifeTwo:
+      "Su hija, fruto de su primer matrimonio, también se hizo profesora. Su hijastro forma parte de la familia exactamente igual. Para Solomon, una familia no se define solo por la sangre, sino por la confianza, la responsabilidad y por estar presente cuando de verdad importa.",
+    galleryEyebrow: "A su propio ritmo",
+    galleryTitle: "El hombre detrás de la voz.",
+    songsStories: "Canciones e historias",
+    messenger: "Escribir por Messenger",
+  },
 } as const;

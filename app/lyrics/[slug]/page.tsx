@@ -25,6 +25,16 @@ export async function generateMetadata({
     description: song
       ? `Read the lyrics and the story behind ${song.title} by Solomon Monroe.`
       : "Lyrics and stories by Solomon Monroe.",
+    alternates: song
+      ? {
+          languages: {
+            en: `/lyrics/${song.slug}`,
+            de: `/de/lyrics/${song.slug}`,
+            fr: `/fr/lyrics/${song.slug}`,
+            es: `/es/lyrics/${song.slug}`,
+          },
+        }
+      : undefined,
   };
 }
 
@@ -54,6 +64,32 @@ const songCopy = {
     previous: "Vorheriger Song",
     next: "Nächster Song",
     moreSongs: "Weitere Songs",
+  },
+  fr: {
+    home: "ACCUEIL",
+    songNavigation: "Navigation entre les chansons",
+    backToSongbook: "Retour aux chansons",
+    music: "Musique",
+    song: "Chanson",
+    behind: "L’histoire de la chanson",
+    lyrics: "Paroles originales",
+    translationNote: "",
+    previous: "Chanson précédente",
+    next: "Chanson suivante",
+    moreSongs: "Autres chansons",
+  },
+  es: {
+    home: "INICIO",
+    songNavigation: "Navegación entre canciones",
+    backToSongbook: "Volver al cancionero",
+    music: "Música",
+    song: "Canción",
+    behind: "La historia detrás de la canción",
+    lyrics: "Letra original",
+    translationNote: "",
+    previous: "Canción anterior",
+    next: "Canción siguiente",
+    moreSongs: "Más canciones",
   },
 } as const;
 

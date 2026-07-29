@@ -9,6 +9,8 @@ export const metadata: Metadata = {
     languages: {
       en: "/",
       de: "/de",
+      fr: "/fr",
+      es: "/es",
     },
   },
 };

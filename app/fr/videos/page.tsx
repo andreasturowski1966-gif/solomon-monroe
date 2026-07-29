@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { VideosContent } from "../../videos/page";
 
 export const metadata: Metadata = {
-  title: "Musikvideos | Solomon Monroe",
+  title: "Clips musicaux | Solomon Monroe",
   description:
-    "Sieh dir die offiziellen Musikvideos des Southern-Soul-Künstlers Solomon Monroe in voller Länge an.",
+    "Regardez les clips officiels en version intégrale de l’artiste Southern Soul Solomon Monroe.",
   alternates: {
     languages: {
       en: "/videos",
@@ -15,6 +15,6 @@ export const metadata: Metadata = {
   },
 };
 
-export default function GermanVideosPage() {
-  return <VideosContent locale="de" />;
+export default function FrenchVideosPage() {
+  return <VideosContent locale="fr" />;
 }

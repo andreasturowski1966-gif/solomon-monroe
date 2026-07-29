@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   title: "Songs & Stories | Solomon Monroe",
   description:
     "Read Solomon Monroe's lyrics and discover the personal stories behind the songs.",
+  alternates: {
+    languages: {
+      en: "/lyrics",
+      de: "/de/lyrics",
+      fr: "/fr/lyrics",
+      es: "/es/lyrics",
+    },
+  },
 };
 
 const lyricsCopy = {
@@ -38,6 +46,34 @@ const lyricsCopy = {
     quote:
       "„Jeder Song trägt ein Stück des Weges in sich, der Solomon hierhergeführt hat.“",
     fallback: "Lyrics aus dem Songbuch von Solomon Monroe.",
+  },
+  fr: {
+    home: "ACCUEIL",
+    backToMusic: "Retour à la musique",
+    eyebrow: "Des mots, des souvenirs & de la musique",
+    title: "Chansons & histoires",
+    intro:
+      "Les paroles, les souvenirs et les moments vécus qui ont donné une voix à chaque chanson.",
+    songbook: "Le recueil",
+    available: "chansons disponibles",
+    livedIn: "Des histoires vraiment vécues.",
+    quote:
+      "« Chaque chanson garde une trace du chemin qui a conduit Solomon jusqu’ici. »",
+    fallback: "Paroles tirées du répertoire de Solomon Monroe.",
+  },
+  es: {
+    home: "INICIO",
+    backToMusic: "Volver a la música",
+    eyebrow: "Palabras, recuerdos y música",
+    title: "Canciones e historias",
+    intro:
+      "Las letras, los recuerdos y los momentos reales que dieron voz a cada canción.",
+    songbook: "El cancionero",
+    available: "canciones disponibles",
+    livedIn: "Historias vividas de verdad.",
+    quote:
+      "«Cada canción lleva consigo una parte del camino que trajo a Solomon hasta aquí».",
+    fallback: "Letra del repertorio de Solomon Monroe.",
   },
 } as const;
 

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { LyricsPageContent } from "../../lyrics/page";
 
 export const metadata: Metadata = {
-  title: "Songs & Geschichten | Solomon Monroe",
+  title: "Canciones e historias | Solomon Monroe",
   description:
-    "Lies Solomon Monroes Songtexte und entdecke die persönlichen Geschichten hinter den Songs.",
+    "Lee las letras de Solomon Monroe y descubre las historias personales que hay detrás de sus canciones.",
   alternates: {
     languages: {
       en: "/lyrics",
@@ -15,6 +15,6 @@ export const metadata: Metadata = {
   },
 };
 
-export default function GermanLyricsPage() {
-  return <LyricsPageContent locale="de" />;
+export default function SpanishLyricsPage() {
+  return <LyricsPageContent locale="es" />;
 }

@@ -1,4 +1,4 @@
-export const locales = ["en", "de"] as const;
+export const locales = ["en", "de", "fr", "es"] as const;
 
 export type Locale = (typeof locales)[number];
 
@@ -8,8 +8,8 @@ export function localePath(locale: Locale, path: string) {
   }
 
   if (path === "/") {
-    return "/de";
+    return `/${locale}`;
   }
 
-  return `/de${path}`;
+  return `/${locale}${path}`;
 }
