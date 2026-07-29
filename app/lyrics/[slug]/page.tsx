@@ -49,9 +49,8 @@ const songCopy = {
     music: "Musik",
     song: "Song",
     behind: "Die Geschichte hinter dem Song",
-    lyrics: "Deutsche Übersetzung",
-    translationNote:
-      "Sinngemäße Übersetzung des englischen Originaltexts. Rhythmus, Reime und Mehrdeutigkeiten können abweichen.",
+    lyrics: "Lyrics",
+    translationNote: "",
     previous: "Vorheriger Song",
     next: "Nächster Song",
     moreSongs: "Weitere Songs",

@@ -90,9 +90,9 @@ export const homeCopy = {
       ["Galerie", "#gallery"],
       ["Songs & Geschichten", "/lyrics"],
     ],
-    tagline: "Southern Soul · Im Leben gereifte Geschichten",
+    tagline: "Southern Soul · Geschichten aus dem Leben",
     intro:
-      "Ein ganzes Leben führte hierher. Soulmusik, geprägt von harter Arbeit, Klassenzimmern, zweiten Chancen und dem Mut, noch einmal neu anzufangen. Jeder Song trägt eine Geschichte in sich – und hier erzählt Solomon vom Leben hinter den Lyrics.",
+      "Hinter dieser Musik steht ein ganzes Leben: harte Arbeit, viele Jahre im Klassenzimmer, zweite Chancen und der Mut, noch einmal neu anzufangen. Jeder Song hat seine eigene Geschichte – und hier erzählt Solomon, welches Stück seines Lebens darin steckt.",
     meet: "Solomon kennenlernen",
     musicStories: "Die Musik — Die Geschichten",
     videos: "Die Videos",
@@ -101,7 +101,7 @@ export const homeCopy = {
     storyEyebrow: "Seine Geschichte",
     storyTitle: "Eine Stimme, gereift durch das Leben.",
     storyIntro:
-      "Solomon Monroe wurde 1966 im Süden der USA geboren. Die Musik kam früh in sein Leben, doch der Weg zum Künstler nahm einen langen Umweg.",
+      "Solomon Monroe wurde 1966 im Süden der USA geboren. Die Musik begleitete ihn von klein auf, doch bis zu seinem Leben als Künstler sollte es noch ein langer Weg sein.",
     chapters: [
       {
         year: "1966",
@@ -111,23 +111,23 @@ export const homeCopy = {
       {
         year: "Als junger Mann",
         title: "Ein Weg, der nicht seiner war",
-        text: "Nach der Highschool folgte er seinem Vater ins Stahlwerk. Er achtete diese Arbeit, verstand aber schnell, dass sein eigenes Leben ihn von einem anderen Ort aus rief.",
+        text: "Nach der Highschool folgte er seinem Vater ins Stahlwerk. Er hatte großen Respekt vor dieser Arbeit, merkte aber schon bald, dass sein eigener Weg woanders lag.",
       },
       {
         year: "Studienjahre",
         title: "Tagsüber Seminarraum, nachts Soulclubs",
-        text: "Solomon studierte Musik und Englisch auf Lehramt. Abends lernte er in Bars und kleinen Soulclubs, welche Wahrheit ein Song tragen kann.",
+        text: "Solomon studierte Musik und Englisch auf Lehramt. Abends spielte er in Bars und kleinen Soulclubs – und lernte dort, wie ehrlich ein Song sein kann.",
       },
       {
         year: "Ein Berufsleben",
         title: "Der Lehrer findet seine eigene Stimme",
-        text: "Jahrzehntelang brachte er Highschool-Schülern bei, genau zu lesen, aufmerksam zuzuhören und ihrer Stimme zu vertrauen. Erst später entschied er, dass es Zeit war, seiner eigenen vollkommen zu vertrauen.",
+        text: "Jahrzehntelang brachte er Highschool-Schülern bei, genau zu lesen, aufmerksam zuzuhören und der eigenen Stimme zu vertrauen. Erst viel später war er selbst bereit, seiner Stimme ganz zu folgen.",
       },
     ],
     musicEyebrow: "Die Musik & die Geschichten",
     musicTitle: "Soul, hinter dem ein ganzes Leben steht.",
     musicIntro:
-      "Klassischer Southern Soul trifft auf Blues, Gospel und die Erzählkunst eines gereiften Mannes. Diese Songs handeln von Liebe nach Enttäuschungen, Würde, Vergebung, Familie und dem Augenblick, in dem man endlich die eigene Stimme wählt. Öffne einen Song, lies die Lyrics und erfahre von Solomon, welche Erinnerung, welcher Mensch oder Wendepunkt ihn inspiriert hat.",
+      "Klassischer Southern Soul trifft auf Blues, Gospel und die Geschichten eines Mannes, der viel erlebt hat. Diese Songs handeln von neuer Liebe nach schweren Enttäuschungen, von Würde, Vergebung, Familie und dem Mut, endlich den eigenen Weg zu gehen. Öffne einen Song, lies die Lyrics und erfahre von Solomon, welche Erinnerung, welcher Mensch oder Wendepunkt dahintersteht.",
     moreThanLyrics: "Mehr als Songtexte",
     everySong: "Jeder Song hat eine Geschichte.",
     storyCard:
@@ -143,15 +143,15 @@ export const homeCopy = {
     listenNow: "Jetzt anhören",
     servicesTitle: "Finde Solomon bei deinem bevorzugten Musikdienst.",
     servicesText:
-      "Folge dem offiziellen Künstlerprofil für aktuelle Veröffentlichungen und alles, was noch kommt.",
+      "Folge Solomons offiziellem Künstlerprofil, damit du keine neue Veröffentlichung verpasst.",
     openSpotify: "Spotify öffnen",
     openAmazon: "Amazon Music öffnen",
     lifeEyebrow: "Das Leben abseits der Bühne",
     lifeTitle: "Familie entsteht, wenn man füreinander da ist.",
     lifeOne:
-      "Solomon ist seit mehr als zwanzig Jahren mit seiner zweiten Frau verheiratet. Ihr gemeinsames Leben gründet auf Freundschaft, Verlässlichkeit und der stillen Entscheidung, sich immer wieder füreinander zu entscheiden.",
+      "Solomon ist seit mehr als zwanzig Jahren mit seiner zweiten Frau verheiratet. Ihr gemeinsames Leben gründet auf Freundschaft, Verlässlichkeit und der Entscheidung, jeden Tag füreinander da zu sein.",
     lifeTwo:
-      "Seine Tochter aus erster Ehe wurde ebenfalls Lehrerin. Sein Stiefsohn gehört nicht weniger zur Familie. Für Solomon wird Familie nicht allein durch Herkunft bestimmt, sondern durch Vertrauen, Verantwortung und das Dasein füreinander, wenn es darauf ankommt.",
+      "Seine Tochter aus erster Ehe wurde ebenfalls Lehrerin. Sein Stiefsohn gehört für ihn genauso zur Familie. Denn Familie bedeutet für Solomon mehr als gemeinsame Herkunft: Sie entsteht durch Vertrauen, Verantwortung und dadurch, dass man füreinander da ist, wenn es darauf ankommt.",
     galleryEyebrow: "In seinem eigenen Rhythmus",
     galleryTitle: "Der Mensch hinter der Stimme.",
     songsStories: "Songs & Geschichten",

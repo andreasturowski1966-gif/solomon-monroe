@@ -19,7 +19,7 @@ export async function generateMetadata({
       ? `${song.title} — Songtext & Geschichte | Solomon Monroe`
       : "Songs & Geschichten | Solomon Monroe",
     description: song
-      ? `Lies die deutsche Übersetzung und die Geschichte hinter ${song.title} von Solomon Monroe.`
+      ? `Lies den Songtext und die persönliche Geschichte hinter ${song.title} von Solomon Monroe.`
       : "Songtexte und Geschichten von Solomon Monroe.",
     alternates: song
       ? {
