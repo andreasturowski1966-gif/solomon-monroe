@@ -153,6 +153,42 @@ export function SongLyricsContent({
             </section>
           )}
 
+          <nav
+            className="mt-12 grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2"
+            aria-label={copy.moreSongs}
+          >
+            {previousSong ? (
+              <Link
+                href={localePath(locale, `/lyrics/${previousSong.slug}`)}
+                className="bg-[#15110e] p-6 transition-colors hover:bg-[#211a15]"
+              >
+                <span className="text-[0.65rem] font-bold uppercase tracking-[0.22em] text-white/38">
+                  {copy.previous}
+                </span>
+                <span className="mt-2 block font-serif text-xl">
+                  ← {previousSong.title}
+                </span>
+              </Link>
+            ) : (
+              <span className="hidden bg-[#15110e] sm:block" />
+            )}
+            {nextSong ? (
+              <Link
+                href={localePath(locale, `/lyrics/${nextSong.slug}`)}
+                className="bg-[#15110e] p-6 text-right transition-colors hover:bg-[#211a15]"
+              >
+                <span className="text-[0.65rem] font-bold uppercase tracking-[0.22em] text-white/38">
+                  {copy.next}
+                </span>
+                <span className="mt-2 block font-serif text-xl">
+                  {nextSong.title} →
+                </span>
+              </Link>
+            ) : (
+              <span className="hidden bg-[#15110e] sm:block" />
+            )}
+          </nav>
+
           <div className="mt-16 border-t border-white/10 pt-12">
             <p className="mb-10 text-xs font-bold uppercase tracking-[0.3em] text-[#c47f3d]">
               {copy.lyrics}
