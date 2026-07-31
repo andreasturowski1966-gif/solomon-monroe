@@ -17,22 +17,22 @@ export default function GlobalUtilities() {
     { ai: string; messageLabel: string; message: string }
   > = {
     en: {
-      ai: "Portions of this website's content were created with the assistance of artificial intelligence.",
+      ai: "Solomon Monroe is a fictional music and storytelling project created with the assistance of artificial intelligence. At its heart, the lyrics and stories are rooted in genuine human creativity and lived experience. Portions of this website’s content were also created with the assistance of artificial intelligence.",
       messageLabel: "Message Solomon Monroe on Messenger",
       message: "Message Solomon",
     },
     de: {
-      ai: "Teile der Inhalte dieser Website wurden mit Unterstützung künstlicher Intelligenz erstellt.",
+      ai: "Solomon Monroe ist ein fiktives Musik- und Erzählprojekt, das mit Unterstützung künstlicher Intelligenz geschaffen wurde. Im Kern beruhen die Songtexte und Geschichten auf echter menschlicher Kreativität und gelebten Erfahrungen. Auch Teile der Inhalte dieser Website wurden mithilfe künstlicher Intelligenz erstellt.",
       messageLabel: "Solomon Monroe über Messenger schreiben",
       message: "Solomon schreiben",
     },
     fr: {
-      ai: "Certaines parties du contenu de ce site ont été créées avec l’aide de l’intelligence artificielle.",
+      ai: "Solomon Monroe est un projet fictif de musique et de narration créé avec l’aide de l’intelligence artificielle. Au cœur du projet, les paroles et les histoires s’enracinent dans une créativité profondément humaine et des expériences vécues. Certaines parties du contenu de ce site ont également été créées avec l’aide de l’intelligence artificielle.",
       messageLabel: "Écrire à Solomon Monroe sur Messenger",
       message: "Écrire à Solomon",
     },
     es: {
-      ai: "Parte del contenido de este sitio web se creó con ayuda de inteligencia artificial.",
+      ai: "Solomon Monroe es un proyecto ficticio de música y narrativa creado con ayuda de inteligencia artificial. En esencia, las letras y las historias nacen de una creatividad genuinamente humana y de experiencias vividas. Parte del contenido de este sitio web también se creó con ayuda de inteligencia artificial.",
       messageLabel: "Escribir a Solomon Monroe por Messenger",
       message: "Escribir a Solomon",
     },
