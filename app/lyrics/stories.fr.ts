@@ -97,6 +97,15 @@ export const frenchSongStories: Record<string, SongStory> = {
       "La guerre n’a aucun sens, aussi noble que puisse paraître la cause invoquée. Je voulais le dire clairement. C’est, tout simplement, la raison d’être de cette chanson.",
     ],
   },
+  "one-heartbeat": {
+    teaser:
+      "Une chanson sur le destin, ces petites décisions et ces instants fugaces qui peuvent tout changer.",
+    paragraphs: [
+      "One Heartbeat est une chanson sur le destin. Nous connaissons tous ce sentiment : nous faisons des projets, tout va merveilleusement bien, puis soudain la vie change de direction.",
+      "Dans ces moments-là, je me demande parfois ce que Dieu peut bien avoir en tête. Quelle que soit la réponse, la vie ne devient certainement jamais ennuyeuse.",
+      "Avez-vous déjà pris une toute petite décision, ou vécu un bref instant, qui a tout changé ?",
+    ],
+  },
   "nothing-to-do": {
     teaser:
       "Une journée de travail, une soudaine envie de Nouvelle-Angleterre et la première chanson d’une nouvelle époque.",

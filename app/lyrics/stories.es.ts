@@ -97,6 +97,15 @@ export const spanishSongStories: Record<string, SongStory> = {
       "La guerra no tiene sentido, por muy noble que suene la causa que la justifica. Quería decirlo con claridad. Esa es, sencillamente, la razón de esta canción.",
     ],
   },
+  "one-heartbeat": {
+    teaser:
+      "Una canción sobre el destino y esas pequeñas decisiones e instantes fugaces que pueden cambiarlo todo.",
+    paragraphs: [
+      "One Heartbeat es una canción sobre el destino. Todos conocemos esa sensación: hacemos planes, todo marcha de maravilla y, de repente, la vida cambia de rumbo.",
+      "En momentos así, a veces me pregunto qué tendrá Dios en mente. Sea cual sea la respuesta, desde luego la vida nunca se vuelve aburrida.",
+      "¿Alguna vez una decisión diminuta o un breve instante lo cambió todo para ti?",
+    ],
+  },
   "nothing-to-do": {
     teaser:
       "Un día de trabajo, un repentino sueño con Nueva Inglaterra y la primera canción de una nueva etapa.",

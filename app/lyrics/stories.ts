@@ -100,6 +100,15 @@ export const songStories: Record<string, SongStory> = {
       "War is senseless, no matter how noble the cause is said to be. I wanted to put my two cents in. Honestly, that is the whole reason for this song.",
     ],
   },
+  "one-heartbeat": {
+    teaser:
+      "A song about fate—and the tiny decisions and fleeting moments that can change everything.",
+    paragraphs: [
+      "One Heartbeat is a song about fate. We all know the feeling: we make plans, everything is going beautifully—and then, suddenly, life changes direction.",
+      "In moments like that, I sometimes wonder what God might have in mind. Whatever the answer is, life certainly never becomes boring.",
+      "Have you ever made one tiny decision, or lived through one brief moment, that changed everything?",
+    ],
+  },
   "nothing-to-do": {
     teaser:
       "A working day, a sudden dream of New England, and the first song of a new era.",

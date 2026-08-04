@@ -97,6 +97,15 @@ export const germanSongStories: Record<string, SongStory> = {
       "Krieg ist sinnlos, ganz gleich, wie edel die angebliche Sache klingt. Ich wollte dazu meine Meinung sagen. Ehrlich gesagt ist das der ganze Grund für diesen Song.",
     ],
   },
+  "one-heartbeat": {
+    teaser:
+      "Ein Song über das Schicksal – und über kleine Entscheidungen und Augenblicke, die alles verändern können.",
+    paragraphs: [
+      "One Heartbeat ist ein Song über das Schicksal. Wir kennen das alle: Wir machen Pläne, gerade läuft es so richtig gut – und dann ändert das Leben plötzlich die Richtung.",
+      "In solchen Momenten frage ich mich manchmal, was Gott sich wohl dabei denkt. Langweilig wird das Leben dadurch jedenfalls nie.",
+      "Habt ihr auch schon erlebt, dass eine winzige Entscheidung oder ein kleiner Augenblick alles verändert hat?",
+    ],
+  },
   "nothing-to-do": {
     teaser:
       "Ein Arbeitstag, ein plötzlicher Traum von Neuengland und der erste Song einer neuen Ära.",

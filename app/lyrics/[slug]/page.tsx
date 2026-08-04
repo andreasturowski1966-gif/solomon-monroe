@@ -51,6 +51,7 @@ const songCopy = {
     previous: "Previous song",
     next: "Next song",
     moreSongs: "More songs",
+    videoPremiere: "Official music video · August 6, 2026",
   },
   de: {
     home: "STARTSEITE",
@@ -64,6 +65,7 @@ const songCopy = {
     previous: "Vorheriger Song",
     next: "Nächster Song",
     moreSongs: "Weitere Songs",
+    videoPremiere: "Offizielles Musikvideo · 6. August 2026",
   },
   fr: {
     home: "ACCUEIL",
@@ -77,6 +79,7 @@ const songCopy = {
     previous: "Chanson précédente",
     next: "Chanson suivante",
     moreSongs: "Autres chansons",
+    videoPremiere: "Clip officiel · 6 août 2026",
   },
   es: {
     home: "INICIO",
@@ -90,6 +93,7 @@ const songCopy = {
     previous: "Canción anterior",
     next: "Canción siguiente",
     moreSongs: "Más canciones",
+    videoPremiere: "Vídeo musical oficial · 6 de agosto de 2026",
   },
 } as const;
 
@@ -125,7 +129,11 @@ export function SongLyricsContent({
             fill
             priority
             sizes="100vw"
-              className="object-cover object-center opacity-70 grayscale-[5%]"
+              className={`object-cover opacity-70 grayscale-[5%] ${
+                song.slug === "one-heartbeat"
+                  ? "object-[center_22%]"
+                  : "object-center"
+              }`}
           />
           <div className="absolute inset-0 bg-[#0d0b09]/28" />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,transparent_0%,rgba(13,11,9,0.12)_58%,rgba(13,11,9,0.52)_100%)]" />
@@ -169,6 +177,11 @@ export function SongLyricsContent({
           <h1 className="mt-6 font-serif text-5xl leading-[0.95] tracking-[-0.04em] sm:text-7xl">
             {song.title}
           </h1>
+          {song.videoPremiere && (
+            <p className="mt-6 inline-flex border border-[#d99b52]/35 bg-[#17120e]/85 px-4 py-3 text-xs font-bold uppercase tracking-[0.18em] text-[#d7b98d]">
+              {copy.videoPremiere}
+            </p>
+          )}
 
           {song.story && (
             <section className="mt-14 border-y border-[#d99b52]/20 bg-[#17120e] px-6 py-10 sm:px-10 sm:py-12">

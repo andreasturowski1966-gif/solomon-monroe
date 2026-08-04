@@ -13,6 +13,7 @@ export type Song = {
   stanzas: string[][];
   story?: SongStory;
   image?: string;
+  videoPremiere?: string;
 };
 
 function titleFromFilename(filename: string) {
@@ -60,13 +61,20 @@ function readSongs(locale: Locale): Song[] {
 
     const slug = slugify(title);
     const imageSlug =
-      slug === "simply-alive-live-on-stage" ? "simply-alive" : slug;
+      slug === "simply-alive-live-on-stage"
+        ? "simply-alive"
+        : slug === "one-heartbeat"
+          ? "one-heartbeat-background"
+          : slug;
+    const imageExtension = ["webp", "png", "jpg", "jpeg"].find((extension) =>
+      fs.existsSync(path.join(process.cwd(), "public", "images", "lyrics", `${imageSlug}.${extension}`)),
+    );
     const publicImagePath = path.join(
       process.cwd(),
       "public",
       "images",
       "lyrics",
-      `${imageSlug}.webp`,
+      `${imageSlug}.${imageExtension ?? "webp"}`,
     );
 
     return {
@@ -75,8 +83,9 @@ function readSongs(locale: Locale): Song[] {
       number: String(index + 1).padStart(2, "0"),
       story: stories[slug],
       image: fs.existsSync(publicImagePath)
-        ? `/images/lyrics/${imageSlug}.webp`
+        ? `/images/lyrics/${imageSlug}.${imageExtension}`
         : undefined,
+      videoPremiere: slug === "one-heartbeat" ? "2026-08-06" : undefined,
       stanzas: text
         .split(/\r?\n\s*\r?\n/)
         .map((stanza) => stanza.split(/\r?\n/).map((line) => line.trimEnd())),
