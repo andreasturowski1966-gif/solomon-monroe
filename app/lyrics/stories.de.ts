@@ -244,4 +244,24 @@ export const germanSongStories: Record<string, SongStory> = {
       "Daddy, aus dem Ball ist nichts geworden. Aber aus dem Rest schon.",
     ],
   },
+  "i-still-got-your-number": {
+    teaser:
+      "Ein Song über die Stille zwischen alten Freunden – und über die Gefahr, wichtige Worte immer auf morgen zu verschieben.",
+    paragraphs: [
+      "Wenn man lange nichts voneinander gehört hat, kann zwischen zwei Menschen eine unsichtbare Mauer entstehen. Je mehr Zeit vergeht, desto schwerer fällt es, einfach zum Telefon zu greifen. Das schlechte Gewissen hält uns zurück, und wir reden uns ein, dass wir uns morgen melden. Aber was ist, wenn dieses Morgen irgendwann zu spät kommt?",
+      "Die Geschichte im Song ist erfunden, doch das Gefühl dahinter kenne ich nur zu gut. Vor vielen Jahren befand ich mich selbst in einer ähnlichen Situation. Ich hatte Glück: Der Freund, zu dem der Kontakt abgebrochen war, rief schließlich mich an.",
+      "Er war unheilbar krank. Sein Anruf gab uns die Möglichkeit, miteinander zu sprechen, alles Wichtige auszusprechen und uns zu verabschieden. Auch nach mehr als zwanzig Jahren vermisse ich ihn noch immer. Gleichzeitig bin ich unendlich dankbar, dass unsere Geschichte nicht so endete wie die in diesem Song.",
+      "Wenn ihr die Nummer eines Menschen noch habt, wartet vielleicht nicht zu lange mit dem Anruf.",
+    ],
+  },
+  "music-is-like-sunshine": {
+    teaser:
+      "Ein lebensfroher Groove über eine erfolgreiche, aber einsame junge Frau, die in der Musik Wärme, Freiheit und Gesellschaft findet.",
+    paragraphs: [
+      "Am Anfang stand die Idee für einen groovigen, lebensfrohen Song darüber, wie Musik uns auffangen und neue Kraft geben kann. Eigentlich war das Stück schon fertig, als mein Produzent Alex mit zwei Anmerkungen zu mir kam. Zum einen wünschte er sich eine Nummer, zu der man wirklich tanzen kann. Zum anderen sollte die Geschichte nicht von ‚dir und mir‘ handeln, sondern von einer jungen Frau, die in ihrem Leben nach etwas Licht sucht.",
+      "Beruflich ist sie erfolgreich und wirkt, als hätte sie alles im Griff. Doch hinter dieser Fassade ist sie einsam. Die Musik wird zu ihrem Zufluchtsort. Sie trägt sie durch die stillen Stunden und lässt sie spüren, dass das Leben noch immer etwas Schönes für sie bereithält.",
+      "Alex und ich haben den Song gemeinsam umgeschrieben. Dabei wurde uns schnell klar, dass in dieser Geschichte auch ein wunderbares Musikvideo steckt. Ich bin froh, dass ich auf ihn gehört habe. ‚Music Is Like Sunshine‘ ist einer meiner fröhlichsten Songs geworden – ein willkommener Lichtblick nach den melancholischen Balladen der vergangenen Wochen.",
+      "Manchmal braucht ein Song ein zweites Paar Ohren, bevor er die Person findet, von der er schon immer erzählen wollte.",
+    ],
+  },
 };

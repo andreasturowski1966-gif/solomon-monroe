@@ -247,4 +247,24 @@ export const songStories: Record<string, SongStory> = {
       "Daddy, the ball never worked out. But the rest of it did.",
     ],
   },
+  "i-still-got-your-number": {
+    teaser:
+      "A song about the silence that grows between old friends—and the danger of trusting tomorrow with words that need to be said today.",
+    paragraphs: [
+      "There’s a strange wall that can build up between people when too much time has passed without a word. The longer we wait, the harder it becomes to make that call. Guilt gets in the way, and we keep telling ourselves we’ll do it tomorrow. But what happens when tomorrow comes too late?",
+      "The story in this song is fictional, but the feeling behind it is not. Many years ago, I found myself in a similar place. I was fortunate, though—the friend I had lost touch with was the one who finally called me.",
+      "He was terminally ill. That phone call gave us the chance to talk, to say the things that needed saying, and to say goodbye. More than twenty years later, I still miss him. But I will always be grateful that our story did not end the way it does in this song.",
+      "If you still have somebody’s number, maybe don’t wait too long to use it.",
+    ],
+  },
+  "music-is-like-sunshine": {
+    teaser:
+      "A joyful groove about a successful but lonely young woman who finds warmth, freedom, and company in music.",
+    paragraphs: [
+      "I started with the idea of writing a bright, grooving song about the way music can lift us up. The song was already finished when my producer, Alex, came back with two thoughts. First, he wanted something people could really dance to. Second, he felt the story should not be about ‘you and me,’ but about a young woman trying to find a little light in her own life.",
+      "She is successful in her career and appears to have everything under control, yet beneath it all she is lonely. Music becomes her refuge—the thing that carries her through the silence and reminds her that she is still alive.",
+      "Alex and I rewrote the song together, and it did not take long for us to realize that the story could also become a wonderful music video. I’m glad I listened to him. ‘Music Is Like Sunshine’ turned into one of the happiest songs I’ve made—a welcome burst of light after several weeks of heavy-hearted ballads.",
+      "Sometimes a song needs another pair of ears before it finds the person it was always meant to be about.",
+    ],
+  },
 };

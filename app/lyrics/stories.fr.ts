@@ -244,4 +244,24 @@ export const frenchSongStories: Record<string, SongStory> = {
       "Papa, je ne suis jamais devenu très bon avec la balle. Pour le reste, je crois que je m’en suis bien sorti.",
     ],
   },
+  "i-still-got-your-number": {
+    teaser:
+      "Une chanson sur le silence qui s’installe entre de vieux amis et sur le danger de remettre à demain les mots qui devraient être dits aujourd’hui.",
+    paragraphs: [
+      "Lorsqu’on reste longtemps sans donner de nouvelles, un mur invisible peut finir par s’élever entre deux personnes. Plus le temps passe, plus il devient difficile de décrocher le téléphone. La culpabilité nous retient, et nous nous promettons sans cesse d’appeler demain. Mais que se passe-t-il lorsque demain arrive trop tard ?",
+      "L’histoire racontée dans cette chanson est fictive, mais le sentiment qui l’a inspirée m’est familier. Il y a bien longtemps, j’ai vécu quelque chose de semblable. J’ai toutefois eu de la chance : c’est l’ami que j’avais perdu de vue qui a fini par m’appeler.",
+      "Il était condamné par la maladie. Cet appel nous a permis de parler, de dire ce qui devait être dit et de nous faire nos adieux. Plus de vingt ans après, il me manque toujours. Mais je resterai éternellement reconnaissant que notre histoire ne se soit pas terminée comme celle de cette chanson.",
+      "Si vous avez encore le numéro de quelqu’un, n’attendez peut-être pas trop longtemps avant de l’appeler.",
+    ],
+  },
+  "music-is-like-sunshine": {
+    teaser:
+      "Un morceau joyeux et entraînant sur une jeune femme accomplie mais solitaire qui trouve chaleur, liberté et compagnie dans la musique.",
+    paragraphs: [
+      "Au départ, je voulais écrire une chanson lumineuse et entraînante sur cette force que possède la musique : celle de nous relever. Le morceau était déjà terminé lorsque mon producteur, Alex, m’a fait deux remarques. Il souhaitait d’abord une chanson sur laquelle les gens puissent vraiment danser. Ensuite, il pensait que l’histoire ne devait pas parler de « toi et moi », mais d’une jeune femme cherchant un peu de lumière dans sa vie.",
+      "Elle réussit professionnellement et donne l’impression de tout maîtriser. Pourtant, derrière cette apparence, elle souffre de solitude. La musique devient son refuge : elle l’accompagne dans les moments de silence et lui rappelle que la vie peut encore lui offrir de belles choses.",
+      "Alex et moi avons réécrit la chanson ensemble. Nous avons très vite compris que cette histoire pourrait également donner naissance à un merveilleux clip. Je suis heureux de l’avoir écouté. ‘Music Is Like Sunshine’ est devenue l’une de mes chansons les plus joyeuses, une véritable éclaircie après plusieurs semaines de ballades mélancoliques.",
+      "Parfois, une chanson a besoin d’une autre paire d’oreilles avant de trouver la personne dont elle devait raconter l’histoire depuis le début.",
+    ],
+  },
 };

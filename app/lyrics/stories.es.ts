@@ -244,4 +244,24 @@ export const spanishSongStories: Record<string, SongStory> = {
       "Papá, lo de la pelota nunca salió bien. Pero creo que lo demás sí.",
     ],
   },
+  "i-still-got-your-number": {
+    teaser:
+      "Una canción sobre el silencio que crece entre viejos amigos y el peligro de dejar para mañana las palabras que deberían decirse hoy.",
+    paragraphs: [
+      "Cuando pasa demasiado tiempo sin saber nada el uno del otro, puede levantarse un muro invisible entre dos personas. Cuanto más esperamos, más difícil resulta hacer esa llamada. La mala conciencia nos frena y seguimos diciéndonos que llamaremos mañana. Pero ¿qué ocurre si algún día ese mañana llega demasiado tarde?",
+      "La historia de la canción es ficticia, pero conozco muy bien el sentimiento que hay detrás. Hace muchos años viví una situación parecida. Sin embargo, tuve suerte: fue aquel amigo con quien había perdido el contacto quien finalmente me llamó.",
+      "Estaba gravemente enfermo y sabía que le quedaba poco tiempo. Gracias a aquella llamada pudimos hablar, decir todo lo que necesitábamos decir y despedirnos. Más de veinte años después, todavía lo echo de menos. Pero siempre agradeceré que nuestra historia no terminara como la de esta canción.",
+      "Si todavía conservas el número de alguien, quizá no deberías esperar demasiado para llamar.",
+    ],
+  },
+  "music-is-like-sunshine": {
+    teaser:
+      "Un tema alegre y lleno de ritmo sobre una joven exitosa pero solitaria que encuentra calor, libertad y compañía en la música.",
+    paragraphs: [
+      "Todo comenzó con la idea de escribir una canción alegre y llena de ritmo sobre la capacidad que tiene la música para levantarnos el ánimo. El tema ya estaba terminado cuando mi productor, Alex, me hizo dos observaciones. Primero, quería una canción que de verdad invitara a bailar. Segundo, pensaba que la historia no debía hablar de «tú y yo», sino de una joven que intenta encontrar un poco de luz en su vida.",
+      "Ella ha triunfado profesionalmente y parece tenerlo todo bajo control, pero detrás de esa apariencia se siente sola. La música se convierte en su refugio: la acompaña durante las horas de silencio y le recuerda que la vida todavía puede regalarle momentos hermosos.",
+      "Alex y yo reescribimos juntos la canción, y enseguida comprendimos que aquella historia también podía convertirse en un estupendo videoclip. Me alegro de haberlo escuchado. ‘Music Is Like Sunshine’ acabó siendo una de mis canciones más alegres, un rayo de luz muy necesario después de varias semanas de baladas melancólicas.",
+      "A veces una canción necesita que alguien más la escuche antes de encontrar a la persona cuya historia siempre estuvo destinada a contar.",
+    ],
+  },
 };
