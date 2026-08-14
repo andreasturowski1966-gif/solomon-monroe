@@ -132,7 +132,9 @@ export function SongLyricsContent({
               className={`object-cover opacity-70 grayscale-[5%] ${
                 song.slug === "one-heartbeat"
                   ? "object-[center_22%]"
-                  : "object-center"
+                  : song.slug === "music-and-moonshine"
+                    ? "object-[center_15%]"
+                    : "object-center"
               }`}
           />
           <div className="absolute inset-0 bg-[#0d0b09]/28" />

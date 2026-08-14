@@ -264,4 +264,15 @@ export const frenchSongStories: Record<string, SongStory> = {
       "Parfois, une chanson a besoin d’une autre paire d’oreilles avant de trouver la personne dont elle devait raconter l’histoire depuis le début.",
     ],
   },
+  "music-and-moonshine": {
+    teaser:
+      "Une histoire de famille venue du Tennessee, faite de temps difficiles, de moonshine artisanal, d’une chanteuse talentueuse et de fêtes toujours plus grandes dans une grange.",
+    paragraphs: [
+      "À l’adolescence, j’ai passé une nouvelle fois l’été chez ma grand-mère, dans le Tennessee. C’est alors qu’elle m’a raconté l’histoire qui a inspiré cette chanson.",
+      "Pendant la Grande Dépression et la Prohibition, sa famille connut, comme tant d’autres, de graves difficultés financières. Ses parents avaient bâti une petite ferme, et elle voulait les aider à la préserver avec son mari. Elle avait une vingtaine d’années, venait de se marier et était déjà connue pour sa voix exceptionnelle ainsi que pour sa personnalité chaleureuse et charismatique. Elle chantait dans la chorale gospel, mais le blues occupait lui aussi une grande place dans son cœur.",
+      "Elle et mon grand-père imaginèrent donc un plan. Ils mirent de côté une partie du maïs de la ferme pour en faire de l’alcool artisanal — du moonshine, comme tout le monde l’appelait. D’après Grand-mère, elle attirait les gens dans la grange avec de la musique et la promesse d’une soirée animée, tandis que Grand-père y vendait discrètement le moonshine. Ce qui n’était au départ qu’une petite réunion prit peu à peu de l’ampleur, jusqu’à devenir un rendez-vous connu dans toute la région.",
+      "Tout s’est-il vraiment passé exactement comme elle le racontait ? Disons que j’ai quelques doutes, surtout concernant le rôle du shérif. Mais les meilleures histoires de famille prennent toujours un peu plus de couleur en traversant les années.",
+      "La puissante seconde voix que vous entendez sur ce morceau est celle de Nia Hartwell, qui a déjà accompagné ma chorale à plusieurs reprises. J’ai le sentiment que vous entendrez encore souvent parler d’elle.",
+    ],
+  },
 };

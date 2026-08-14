@@ -264,4 +264,15 @@ export const spanishSongStories: Record<string, SongStory> = {
       "A veces una canción necesita que alguien más la escuche antes de encontrar a la persona cuya historia siempre estuvo destinada a contar.",
     ],
   },
+  "music-and-moonshine": {
+    teaser:
+      "Una historia familiar de Tennessee sobre tiempos difíciles, moonshine casero, una cantante extraordinaria y unas fiestas en el granero que no dejaron de crecer.",
+    paragraphs: [
+      "Cuando era adolescente, volví a pasar uno de aquellos veranos con mi abuela en Tennessee. Fue entonces cuando me contó la historia que inspiró esta canción.",
+      "Durante la Gran Depresión y la Ley Seca, su familia atravesó graves dificultades económicas, como tantas otras. Sus padres habían levantado una pequeña granja y ella quería ayudarles a conservarla junto con su marido. Por entonces tenía poco más de veinte años, acababa de casarse y ya era conocida como una cantante extraordinaria, carismática y muy querida. Cantaba en el coro de góspel, pero el blues también ocupaba un lugar importante en su corazón.",
+      "Así que ella y mi abuelo idearon un plan. Apartaron parte del maíz de la granja y lo utilizaron para elaborar licor casero: moonshine, como lo llamaba todo el mundo. Según contaba mi abuela, ella atraía a la gente al granero con música y la promesa de pasar una buena noche, mientras mi abuelo vendía allí el moonshine discretamente. Lo que empezó como una pequeña reunión fue creciendo con el tiempo hasta convertirse en un acontecimiento conocido en toda la zona.",
+      "¿Ocurrió todo exactamente como ella lo contaba? Bueno, tengo algunas dudas, sobre todo acerca del papel del sheriff. Pero toda buena historia familiar adquiere un poco más de color a medida que pasa de una generación a otra.",
+      "La poderosa segunda voz de esta canción pertenece a Nia Hartwell, quien ya ha acompañado a mi coro en varias ocasiones. Tengo la sensación de que volveremos a oír hablar mucho de ella.",
+    ],
+  },
 };

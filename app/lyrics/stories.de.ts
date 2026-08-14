@@ -264,4 +264,15 @@ export const germanSongStories: Record<string, SongStory> = {
       "Manchmal braucht ein Song ein zweites Paar Ohren, bevor er die Person findet, von der er schon immer erzählen wollte.",
     ],
   },
+  "music-and-moonshine": {
+    teaser:
+      "Eine Familiengeschichte aus Tennessee über schwere Zeiten, selbst gebrannten Moonshine, eine begnadete Sängerin und immer größere Feste in einer Scheune.",
+    paragraphs: [
+      "Als Teenager verbrachte ich wieder einmal einen Sommer bei meiner Großmutter in Tennessee. Damals erzählte sie mir die Geschichte, die diesem Song zugrunde liegt.",
+      "Während der Weltwirtschaftskrise und der Prohibition geriet ihre Familie wie so viele andere in große finanzielle Schwierigkeiten. Ihre Eltern hatten eine kleine Farm aufgebaut, und sie wollte ihnen gemeinsam mit ihrem Mann helfen, den Betrieb zu erhalten. Zu dieser Zeit war sie Anfang zwanzig, frisch verheiratet und bereits als begnadete Sängerin mit einer warmen, mitreißenden Ausstrahlung bekannt. Sie sang im Gospelchor, doch auch der Blues hatte einen festen Platz in ihrem Herzen.",
+      "Also schmiedeten sie und mein Großvater einen Plan. Sie zweigten einen Teil des Maises von der Farm ab und brannten daraus selbst gemachten Schnaps – Moonshine, wie ihn alle nannten. Nach Großmutters Erzählung lockte sie die Leute mit Musik und der Aussicht auf einen schönen Abend in die Scheune, während mein Großvater dort unauffällig den Moonshine verkaufte. Aus einem kleinen Treffen wurde mit der Zeit eine immer größere Veranstaltung, von der schließlich die ganze Gegend wusste.",
+      "Ob sich wirklich alles genauso zugetragen hat? Nun, besonders bei der Rolle des Sheriffs habe ich meine Zweifel. Aber jede gute Familiengeschichte wird im Laufe der Jahre ein wenig farbenprächtiger.",
+      "Die kraftvolle zweite Stimme in diesem Song gehört Nia Hartwell, die meinen Chor schon mehrfach unterstützt hat. Ich habe das Gefühl, dass wir noch viel von ihr hören werden.",
+    ],
+  },
 };

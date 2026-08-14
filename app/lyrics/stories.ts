@@ -267,4 +267,15 @@ export const songStories: Record<string, SongStory> = {
       "Sometimes a song needs another pair of ears before it finds the person it was always meant to be about.",
     ],
   },
+  "music-and-moonshine": {
+    teaser:
+      "A Tennessee family story about hard times, homemade moonshine, a gifted singer, and the barn gatherings that kept growing.",
+    paragraphs: [
+      "When I was a teenager, I spent another summer with my grandmother in Tennessee. That was when she told me the story behind this song.",
+      "During the Great Depression—and Prohibition—her family fell on hard times, just like so many others. Her parents had built a small farm, and she wanted to help them keep it going. She was in her early twenties by then, newly married, and already known as a gifted singer with a warm, magnetic personality. She sang in the gospel choir, but the blues had a strong hold on her heart too.",
+      "So she and my grandfather came up with a plan. They set aside some of the farm’s corn and turned it into homemade liquor—moonshine, as everybody called it. According to Grandma, she drew people to the barn with music and the promise of a good time, while Grandpa quietly sold the moonshine. What began as a small gathering kept growing until it became something the whole community knew about.",
+      "Did everything happen exactly the way she told it? Well, I have my doubts about the sheriff’s part in the story. But every good family tale picks up a little extra color as it travels through the years.",
+      "The powerful second voice on this song belongs to Nia Hartwell, who has supported my choir on several occasions. I have a feeling you’ll be hearing a lot more from her.",
+    ],
+  },
 };
