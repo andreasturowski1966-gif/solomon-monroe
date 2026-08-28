@@ -278,4 +278,16 @@ export const songStories: Record<string, SongStory> = {
       "The powerful second voice on this song belongs to Nia Hartwell, who has supported my choir on several occasions. I have a feeling you’ll be hearing a lot more from her.",
     ],
   },
+  "starting-over-again": {
+    teaser:
+      "A song about healthier choices, imperfect progress, and learning that beginning again is not the same as failing.",
+    paragraphs: [
+      "I turned sixty this year, so you can probably imagine that I’ve had more than a few rounds with the weaker side of myself. We all have.",
+      "Six years ago, my weight had climbed well beyond where it needed to be, and my blood work was heading in the wrong direction. I knew I could keep making excuses—or I could change the way I was living.",
+      "I chose the healthier road. These days, I’m in the gym several times a week, I try to eat well—even though life on the road does not always make that easy—and I stay away from alcohol. It has become part of who I am now, something that no longer feels especially difficult. But getting to this point took time, patience, and more than one fresh start.",
+      "Not long ago, the words ‘Starting over, starting over again’ appeared in my head with most of the melody already attached. At first, I did not know what they were trying to tell me. What exactly was I supposed to start over?",
+      "Then I thought about how many times I had already done just that—every time I returned to the gym, made a better choice, or found my way back after slipping into an old habit. That was when I understood the song.",
+      "Starting over does not mean that you failed. Sometimes it simply means you have not given up.",
+    ],
+  },
 };

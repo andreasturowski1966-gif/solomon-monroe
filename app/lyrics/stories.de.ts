@@ -275,4 +275,16 @@ export const germanSongStories: Record<string, SongStory> = {
       "Die kraftvolle zweite Stimme in diesem Song gehört Nia Hartwell, die meinen Chor schon mehrfach unterstützt hat. Ich habe das Gefühl, dass wir noch viel von ihr hören werden.",
     ],
   },
+  "starting-over-again": {
+    teaser:
+      "Ein Song über gesündere Entscheidungen, unvollkommene Fortschritte und die Erkenntnis, dass ein Neuanfang kein Scheitern ist.",
+    paragraphs: [
+      "Ich bin dieses Jahr sechzig geworden. Ihr könnt euch also vermutlich denken, dass ich schon mehr als eine Runde mit meiner weniger disziplinierten Seite ausgetragen habe. Das kennen wir wohl alle.",
+      "Vor sechs Jahren lag mein Gewicht deutlich über dem gesunden Bereich, und auch meine Blutwerte entwickelten sich in die falsche Richtung. Mir wurde klar, dass ich entweder weiter Ausreden finden oder meine Lebensweise ändern konnte.",
+      "Ich entschied mich für den gesünderen Weg. Heute gehe ich mehrmals pro Woche ins Fitnessstudio, versuche mich vernünftig zu ernähren – auch wenn das unterwegs nicht immer einfach ist – und verzichte auf Alkohol. Inzwischen gehört das alles zu meinem Leben und fällt mir nicht mehr besonders schwer. Doch bis zu diesem Punkt war es ein langer Weg, auf dem ich Geduld und mehr als einen Neuanfang brauchte.",
+      "Vor Kurzem gingen mir plötzlich die Worte ‚Starting over, starting over again‘ durch den Kopf – und ein großer Teil der Melodie war gleich mit dabei. Zunächst wusste ich nicht, was mir diese Zeile sagen wollte. Womit sollte ich denn noch einmal von vorn anfangen?",
+      "Dann dachte ich daran, wie oft ich genau das bereits getan hatte: jedes Mal, wenn ich wieder ins Training einstieg, eine bessere Entscheidung traf oder nach einem Rückfall in alte Gewohnheiten auf meinen Weg zurückkehrte. In diesem Moment verstand ich den Song.",
+      "Noch einmal anzufangen bedeutet nicht, dass man gescheitert ist. Manchmal bedeutet es einfach nur, dass man nicht aufgegeben hat.",
+    ],
+  },
 };

@@ -134,7 +134,9 @@ export function SongLyricsContent({
                   ? "object-[center_22%]"
                   : song.slug === "music-and-moonshine"
                     ? "object-[center_15%]"
-                    : "object-center"
+                    : song.slug === "starting-over-again"
+                      ? "object-[62%_center] sm:object-center"
+                      : "object-center"
               }`}
           />
           <div className="absolute inset-0 bg-[#0d0b09]/28" />

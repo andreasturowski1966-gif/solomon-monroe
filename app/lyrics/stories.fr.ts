@@ -275,4 +275,16 @@ export const frenchSongStories: Record<string, SongStory> = {
       "La puissante seconde voix que vous entendez sur ce morceau est celle de Nia Hartwell, qui a déjà accompagné ma chorale à plusieurs reprises. J’ai le sentiment que vous entendrez encore souvent parler d’elle.",
     ],
   },
+  "starting-over-again": {
+    teaser:
+      "Une chanson sur les choix plus sains, les progrès imparfaits et l’idée que recommencer ne signifie pas échouer.",
+    paragraphs: [
+      "J’ai eu soixante ans cette année. Vous pouvez donc imaginer que j’ai déjà livré plus d’un combat contre la part la moins disciplinée de moi-même. Nous connaissons tous cela.",
+      "Il y a six ans, mon poids avait largement dépassé un niveau raisonnable et mes analyses de sang évoluaient dans la mauvaise direction. J’ai compris que je pouvais continuer à chercher des excuses ou décider de changer ma façon de vivre.",
+      "J’ai choisi une voie plus saine. Aujourd’hui, je vais à la salle de sport plusieurs fois par semaine, j’essaie de bien manger — même si ce n’est pas toujours facile lorsque je suis sur la route — et je ne bois pas d’alcool. Ce mode de vie fait désormais partie de moi et ne me demande plus autant d’efforts. Mais le chemin a été long, et il m’a fallu de la patience ainsi que plusieurs nouveaux départs.",
+      "Il y a peu de temps, les mots « Starting over, starting over again » me sont venus à l’esprit, accompagnés d’une mélodie presque complète. Au début, je ne savais pas ce qu’ils cherchaient à me dire. Que devais-je donc recommencer ?",
+      "Puis j’ai pensé à toutes les fois où je l’avais déjà fait : chaque retour à la salle, chaque choix plus raisonnable et chaque fois où j’avais retrouvé mon chemin après être retombé dans une ancienne habitude. C’est alors que j’ai compris la chanson.",
+      "Recommencer ne signifie pas que l’on a échoué. Cela signifie parfois simplement que l’on n’a pas abandonné.",
+    ],
+  },
 };

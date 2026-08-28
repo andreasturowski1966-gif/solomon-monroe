@@ -275,4 +275,16 @@ export const spanishSongStories: Record<string, SongStory> = {
       "La poderosa segunda voz de esta canción pertenece a Nia Hartwell, quien ya ha acompañado a mi coro en varias ocasiones. Tengo la sensación de que volveremos a oír hablar mucho de ella.",
     ],
   },
+  "starting-over-again": {
+    teaser:
+      "Una canción sobre decisiones más saludables, avances imperfectos y la certeza de que volver a empezar no significa fracasar.",
+    paragraphs: [
+      "Este año cumplí sesenta, así que pueden imaginar que ya he librado más de una batalla contra la parte menos disciplinada de mí mismo. Todos conocemos esa lucha.",
+      "Hace seis años, mi peso estaba muy por encima de lo recomendable y los resultados de mis análisis empezaban a ir en la dirección equivocada. Comprendí que podía seguir buscando excusas o cambiar mi manera de vivir.",
+      "Elegí un camino más saludable. Ahora voy al gimnasio varias veces por semana, intento comer bien —aunque viajar no siempre lo pone fácil— y evito el alcohol. Con el tiempo, todo eso se ha convertido en mi forma de vida y ya no me resulta especialmente difícil. Pero llegar hasta aquí fue un camino largo que exigió paciencia y más de un nuevo comienzo.",
+      "Hace poco, las palabras «Starting over, starting over again» aparecieron en mi cabeza acompañadas de una melodía casi completa. Al principio no sabía qué querían decirme. ¿Qué se suponía que debía comenzar de nuevo?",
+      "Entonces pensé en todas las veces que ya lo había hecho: cada vez que regresé al gimnasio, tomé una decisión mejor o retomé el camino después de volver a caer en una vieja costumbre. En ese momento comprendí la canción.",
+      "Empezar de nuevo no significa que hayas fracasado. A veces solo significa que no te has rendido.",
+    ],
+  },
 };
