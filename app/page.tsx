@@ -103,6 +103,7 @@ export function HomeContent({ locale }: { locale: Locale }) {
               Solomon
               <span className="block italic text-[#d7b98d]">Monroe</span>
             </h1>
+            <Link href="/albums/aint-done-dancing-yet" className="mt-8 block max-w-xl border-l-2 border-[#d99b52] bg-[#17120e]/90 px-6 py-5 transition-colors hover:bg-[#302116]"><span className="text-[0.65rem] font-bold uppercase tracking-[0.25em] text-[#d99b52]">{locale === "de" ? "Das Album entdecken" : locale === "fr" ? "Découvrir l’album" : locale === "es" ? "Descubre el álbum" : "Explore the album"}</span><span className="mt-2 block font-serif text-3xl">Ain’t Done Dancing Yet →</span><span className="mt-2 block text-sm text-white/60">Solomon Monroe &amp; The Black Hat Guys</span></Link>
             <p className="mt-8 max-w-xl text-base leading-8 text-white/68 sm:text-lg">
               {copy.intro}
             </p>
